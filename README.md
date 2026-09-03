@@ -92,3 +92,7 @@ I deeply value peer exchange and constructive feedback from the global developer
   <a href="https://guobug.github.io"><img src="https://img.shields.io/badge/Blog-guobug.github.io-00DF72?style=for-the-badge&logo=jekyll&logoColor=white"/></a>
   <a href="mailto:gu0bug0@gmail.com"><img src="https://img.shields.io/badge/Gmail-gu0bug0%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </p>
+
+<p align="center">
+  <b>English</b> · <a href="./README_zh.md">简体中文</a>
+</p>
