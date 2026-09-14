@@ -4,7 +4,7 @@
 > Former Head of Product at **GitLab (CN)**.  
 > Exploring AI-native workflows, client-side DAG engines, and local-first developer tooling.
 
-[Blog](https://guobug.github.io) · [Twitter / X](https://x.com/...) · [Email](mailto:gu0bug0@gmail.com)
+[Blog](https://guobug.github.io) · [Email](mailto:gu0bug0@gmail.com)
 
 ---
 
