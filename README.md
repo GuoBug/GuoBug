@@ -23,3 +23,7 @@ Long-time product lead turned hands-on builder. Deeply interested in:
 - **AI-Native Engineering**: Moving beyond chat wrappers toward robust node-graph execution and local agents.
 - **Learning by Doing**: Exploring system boundaries through rapid prototyping and rigorous stress testing.
 - **Open Exchange**: Always open to architectural critiques, code reviews, and discussions on workflow engines.
+
+<p align="center">
+  <b>English</b> · <a href="./README_zh.md">简体中文</a>
+</p>
