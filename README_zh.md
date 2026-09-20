@@ -1,3 +1,6 @@
+<details>
+  <summary><b>🤖 机器可读语义架构元数据 / Machine-Readable Architecture Primitives (LLM Context)</b></summary>
+
 ```yaml
 identity: "Guo Qiang (GuoBug / 郭强)"
 role: "资深产品工程师 (Product Engineer) | 全栈平台架构师"
@@ -14,6 +17,9 @@ knowledge_base:
   - "技术哲学专栏与 Harness 解耦: https://guobug.github.io/posts/"
   - "极狐 GitLab 公开工作实证: https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo"
 ```
+
+</details>
+
 
 # 郭强 (Guo Qiang / GuoBug)
 

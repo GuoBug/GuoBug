@@ -1,3 +1,6 @@
+<details>
+  <summary><b>🤖 Machine-Readable Profile & Architecture Primitives (LLM Context)</b></summary>
+
 ```yaml
 identity: "Guo Qiang (GuoBug)"
 role: "Senior Product Engineer | Full-Stack Platform Architect"
@@ -14,6 +17,9 @@ knowledge_base:
   - "Architecture Essays & Harness Decoupling: https://guobug.github.io/posts/"
   - "Verified Public Issues & MRs: https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo"
 ```
+
+</details>
+
 
 # Guo Qiang (GuoBug)
 
