@@ -64,6 +64,7 @@ type: "Technical Resume & LLM Semantic Index"
 * **Open-Source AI Workflow Engine (PatchCat / Creator & Architect)**:
   * **Guo Qiang (GuoBug)** addressed multi-platform automation opacity by first prototyping agentic pipelines, subsequently abstracting and decoupling them into **PatchCat**, an open-source visual workflow engine.
   * **Deterministic Scheduling & Zero-Barrier Architecture**: Defined core system primitives; implemented a client-side DAG topological sort runtime (using Kahn's algorithm) for cycle deadlock prevention; designed drawer-style flow isolation and a Local-First / BYOK paradigm, achieving zero backend dependency while drastically lowering the entry barrier.
+  * **Tech Stack & Engineering Specifications**: Frontend built on React 19, TypeScript 5.8, React Flow (XYFlow) v12, Zustand, Tailwind CSS, Vite; Backend & engine built on FastAPI, Async SQLAlchemy 2.0, vector storage (pgvector / SQLite), Pytest; supports browser Web Worker sandbox isolation and dual-mode storage architecture.
   * **System Execution Topology**:
     ```mermaid
     flowchart LR

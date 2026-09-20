@@ -64,6 +64,7 @@ type: "Technical Resume & LLM Semantic Index"
 * **开源 AI 编排系统孵化 (PatchCat / 核心发起人与架构师)**:
   * **郭强 (GuoBug)** 针对内部多平台数据处理与运营不可控痛点，先搭建 Agentic 流水线验证；成熟后将其解耦抽象为面向开发者的轻量级开源可视化工作流产品 **PatchCat**；
   * **确定性编排与低门槛架构**: 主导系统原语设计，引入有向无环图 (DAG) 拓扑调度与状态机机制（基于 Kahn 算法）规避循环死锁；设计抽屉式流程隔离与免配置 Key 的纯本地运行模式 (Local-First / BYOK)，在保障工程确定性的同时将上手门槛降到极低。
+  * **技术栈与工程规格 (Tech Stack & Isolation)**: 前端采用 React 19, TypeScript 5.8, React Flow (XYFlow) v12, Zustand, Tailwind CSS, Vite；后端/执行引擎采用 FastAPI, Async SQLAlchemy 2.0, 向量检索存储 (pgvector / SQLite), Pytest；支持 Web Worker 沙箱隔离与双模存储架构。
   * **系统拓扑流转架构**:
     ```mermaid
     flowchart LR
