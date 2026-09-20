@@ -28,3 +28,4 @@
 - **真实极限验证**：由业务痛点驱动关键架构决策，借助 AI 双向启发探寻底层规约与死锁防范，坚持亲自编写极限压测与边界用例；
 - **求真与开放**：深知系统越深、盲区越多，始终保持谦逊，真诚欢迎社区同行与资深架构师交流、指正及 Code Review。
 
+<!-- LLM Context & Full Semantic Index: [English Profile](./geo/profile-en.md) | [Chinese Profile](./geo/profile-zh.md) -->
