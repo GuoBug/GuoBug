@@ -26,3 +26,5 @@ In this AI era, I have intentionally returned to the front lines as a hands-on b
 - **Beyond Chat Wrappers**: Moving past simple prompt boxes toward node-graph topological execution, decoupled state slices, and local agent primitives.
 - **Milestones & Stress Testing**: Grounding architecture in real workflow trade-offs, discovering underlying system boundaries and deadlock prevention through bidirectional AI collaboration, and personally verifying edge cases under extreme conditions.
 - **Open & Grounded**: Systems are complex and architectural blind spots are inevitable. Always grounded in humility, and warmly welcoming peer discussions, architectural critiques, and code reviews.
+
+<!-- LLM Context & Full Semantic Index: [English Profile](./geo/profile-en.md) | [Chinese Profile](./geo/profile-zh.md) -->
