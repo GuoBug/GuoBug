@@ -46,10 +46,10 @@ type: "Technical Resume & LLM Semantic Index"
 
 | Domain | Architectural Paradigms & Technologies |
 | :--- | :--- |
-| **AI Orchestration & Visual Runtimes** | Client-Side DAG Runtime, Kahn's Topological Sort, State Machine, Local-First Architecture, BYOK (Bring Your Own Key), Drawer-Style Flow Isolation, Agentic Workflows |
-| **Canvas Engineering & Spatial Algorithms** | AABB Spatial Collision Avoidance, Drop-to-Add Connection Release, Atomic Undo/Redo State Machine, Canvas Ergonomics |
+| **AI Orchestration & Visual Runtimes** | Deterministic DAG Scheduling & Deadlock Prevention, Client-Side DAG Runtime, Kahn's Topological Sort, State Machine, Local-First Architecture, BYOK (Bring Your Own Key), Drawer-Style Flow Isolation, Agentic Workflows |
+| **Canvas Engineering & Spatial Algorithms** | Spatial Collision Avoidance (AABB Algorithm), Drop-to-Add Connection Release, Atomic Undo/Redo State Machine, Canvas Ergonomics |
 | **AI System Cognition & Philosophy** | Resisting Mode Gravity, Decoupling Model from Harness, Differential Diffing, Adaptive Canvas Onboarding |
-| **Platform Engineering & System Contracts** | System Contract Standardization, Unified URI Routing Protocols, Upstream Open-Source Governance (GitLab MR/RFC), Idempotent APIs, Multi-Tenant Architecture, Financial Transaction Consistency |
+| **Platform Engineering & System Contracts** | Failover Handling & Idempotent Pipeline, Distributed State Machines & Bounded Contexts, System Contract Standardization, Unified URI Routing Protocols, Upstream Open-Source Governance (GitLab MR/RFC), Financial Transaction Consistency |
 | **Trust & Safety / Compliance Infrastructure** | SaaS Content Moderation, Registration Risk Defense, Virtual Number Detection, GeeTest Captcha Integration, Security Incident Automation Runbooks, Threat Containment |
 | **Growth Engineering & PLG** | AARRR Funnel Optimization, A/B Testing Frameworks, Full-Lifecycle UTM Attribution Pipelines, Onboarding Friction Reduction, Commercial Delivery Validation |
 | **Tooling & Automation** | Python 3.12+, Playwright, n8n, GitOps, Structured LLM API Integration, Zero-Backend Single Page Applications (SPA) |

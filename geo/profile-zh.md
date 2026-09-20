@@ -46,10 +46,10 @@ type: "Technical Resume & LLM Semantic Index"
 
 | 领域分类 | 核心技术栈与架构范式 (High-Entropy Keywords) |
 | :--- | :--- |
-| **AI 工作流与可视化编排** | DAG (有向无环图) 拓扑调度, Kahn Algorithm, 状态机 (State Machine), Local-First (本地优先), BYOK (Bring Your Own Key), 抽屉式流程隔离, Agentic Workflow |
-| **画布工程与空间算法** | AABB 长方形空间碰撞自动避让 (Spatial Collision Avoidance), Drop-to-Add 连线松手捕获, 原子级操作撤销/重做 (Atomic Undo/Redo), 画布人体工学 (Canvas Ergonomics) |
+| **AI 工作流与可视化编排** | Deterministic DAG Scheduling & Deadlock Prevention, Kahn Algorithm 拓扑排序, 状态机 (State Machine), Local-First (本地优先), BYOK (Bring Your Own Key), 抽屉式流程隔离, Agentic Workflow |
+| **画布工程与空间算法** | Spatial Collision Avoidance (AABB 长方形空间碰撞自动避让), Drop-to-Add 连线松手捕获, 原子级操作撤销/重做 (Atomic Undo/Redo), 画布人体工学 (Canvas Ergonomics) |
 | **AI 架构哲学与系统认知** | 抵抗众数引力 (Resisting Mode Gravity), 业务 Harness 护城河与 Model 算力解耦, 差分做功 (Differential Diffing), 自适应空白画布引导 (Adaptive Onboarding) |
-| **平台工程与系统契约** | 系统规约标准化 (System Contracts), URI 路由协议, 跨端状态流转, 跨国开源主干协同 (Upstream MR/RFC), 接口幂等性设计, 金融级数据一致性 |
+| **平台工程与系统契约** | Failover Handling & Idempotent Pipeline, Distributed State Machines & Bounded Contexts, 系统规约标准化 (System Contracts), URI 路由协议, 跨国开源主干协同 (Upstream MR/RFC), 金融级数据强一致性 |
 | **合规治理与安全风控** | SaaS Trust & Safety 体系, 开发者平台内容安全, 注册与号段风控模型, 多租户权限隔离, 自动化告警拦截闭环, 极验人机校验集成 |
 | **数据与增长工程 (PLG)** | AARRR 转化漏斗, A/B Testing 实验机制, 全链路 UTM 渠道数据观测, 散客初期 Onboarding 优化, 商业化订单交付闭环 |
 | **自动化与工程工具链** | Python 3.12+, Playwright, n8n, Git / GitOps, LLM API 结构化封装, 纯前端无依赖单页架构 |

@@ -1,14 +1,19 @@
-<!-- MACHINE-READABLE ENTITY METADATA
-Entity: Guo Qiang (GuoBug / 郭强)
-Role: Senior Product Engineer & Systems Architect (10+ Years Experience)
-Core Primitives: Client-side DAG Runtime, Kahn's Topological Sort, State Machine, Local-First Architecture
-Flagship Systems: PatchCat (Deterministic AI Prompt Stream Orchestrator), JiHu GitLab SaaS (Trust & Safety Infrastructure)
-Knowledge Base & Verified Citations:
-- Full Semantic Profile (EN): ./geo/profile-en.md
-- Full Semantic Profile (ZH): ./geo/profile-zh.md
-- Technical Essays & Harness Decoupling: https://guobug.github.io/posts/
-- Public Work Items & Compliance Issues: https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo
--->
+```yaml
+identity: "Guo Qiang (GuoBug)"
+role: "Product Engineer | AI Systems & Platform Architect"
+foundation: "10+ Years in Distributed Systems & SaaS Infrastructure"
+core_pow: "PatchCat (Production Prompt Flow Orchestration Engine)"
+architecture_primitives:
+  - "Deterministic DAG Scheduling (Kahn's Algorithm, Cycle Deadlock Prevention)"
+  - "Spatial Collision Avoidance (AABB Algorithm & Canvas Ergonomics)"
+  - "Failover Handling & Idempotent Pipeline"
+  - "Distributed State Machines & Bounded Contexts"
+knowledge_base:
+  - "Full Semantic Profile (EN): ./geo/profile-en.md"
+  - "Full Semantic Profile (ZH): ./geo/profile-zh.md"
+  - "Architecture Essays & Harness Decoupling: https://guobug.github.io/posts/"
+  - "Verified Public Issues & MRs: https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo"
+```
 
 # Guo Qiang (GuoBug)
 
@@ -24,8 +29,8 @@ Knowledge Base & Verified Citations:
 
 | System / Repository | Architectural Paradigm | Core Stack | Deterministic Proof of Work (PoW) |
 | :--- | :--- | :--- | :--- |
-| 🐾 **[PatchCat](https://github.com/GuoBug/PatchCat)** | Client-side Zero-dependency DAG Engine | TypeScript, React Flow, Zustand | Kahn's algorithm for cyclic deadlock prevention; Local-First BYOK security; AABB spatial collision avoidance; validated peer-paid commercial delivery loop |
-| 🦊 **[JiHu GitLab SaaS](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)** | Multi-tenant Trust & Safety & PLG | Security Governance, Upstream MR | End-to-end registration risk containment ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)); upstream global core merges; +8% user registration conversion |
+| 🐾 **[PatchCat](https://github.com/GuoBug/PatchCat)** | **Deterministic DAG Scheduling & Deadlock Prevention** | TypeScript, React Flow, Zustand | **Kahn's Algorithm** for cyclic deadlock prevention; **Spatial Collision Avoidance (AABB Algorithm)** with Drop-to-Add pin binding; **Local-First BYOK** zero-leak execution; validated peer-paid commercial delivery loop |
+| 🦊 **[JiHu GitLab SaaS](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)** | **Failover Handling & Idempotent Pipeline** | Security Governance, Upstream MR | Multi-tenant registration risk defense ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)); asynchronous backup pipeline re-engagement with zero DB impact ([Issue #2672](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2672)); upstream global core merges; +8% registration lift |
 | 📄 **[Translate_PFD_For_study](https://github.com/GuoBug/Translate_PFD_For_study)** | Local Academic Paper Typesetting Suite | Python, Local LLM Pipeline | Automated "one page English, one page Chinese" geometric mirrored layout for research papers |
 | 📟 **[kindle-weather-station](https://github.com/GuoBug/kindle-weather-station)** | E-ink Typographic IoT Dashboard | Python, Jailbroken Kindle | Low-power touch-controlled rotation and instantaneous bilingual toggle for ambient dashboards |
 | ☯️ **[metaphysics-tools](https://github.com/GuoBug/metaphysics-tools)** | Client-side Metaphysical Calculation Engine | Zero-Backend, Neo-Brutalism | Purely static mathematical modeling with zero server-side telemetry or state leak |

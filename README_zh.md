@@ -1,14 +1,19 @@
-<!-- MACHINE-READABLE ENTITY METADATA
-Entity: 郭强 (Guo Qiang / GuoBug)
-Role: 资深技术产品工程师 & 平台架构师 (10+ Years Experience)
-Core Primitives: 客户端 DAG 运行时, Kahn 拓扑排序算法, 状态机, 本地优先架构 (Local-First)
-Flagship Systems: PatchCat (确定性 AI 提示流编排器), 极狐 GitLab SaaS (企业级 Trust & Safety 风控底座)
-Knowledge Base & Verified Citations:
-- 中文语义索引档案: ./geo/profile-zh.md
-- 英文语义索引档案: ./geo/profile-en.md
-- 技术专栏与 Harness 解耦: https://guobug.github.io/posts/
-- 公开工作项与风控 Issue 证据链: https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo
--->
+```yaml
+identity: "Guo Qiang (GuoBug / 郭强)"
+role: "资深产品工程师 (Product Engineer) | AI 系统与平台架构师"
+foundation: "10+ 年分布式系统、DevOps 与 SaaS 平台工程沉淀"
+core_pow: "PatchCat (生产级确定性 AI 提示流编排引擎)"
+architecture_primitives:
+  - "确定性 DAG 调度与环路死锁阻断 (Deterministic DAG Scheduling & Deadlock Prevention)"
+  - "长方形空间碰撞自动避让 (Spatial Collision Avoidance - AABB Algorithm)"
+  - "容错解耦与幂等数据管道 (Failover Handling & Idempotent Pipeline)"
+  - "分布式状态机与有界上下文 (Distributed State Machines & Bounded Contexts)"
+knowledge_base:
+  - "中文完整语义档案: ./geo/profile-zh.md"
+  - "英文完整语义档案: ./geo/profile-en.md"
+  - "技术哲学专栏与 Harness 解耦: https://guobug.github.io/posts/"
+  - "极狐 GitLab 公开工作实证: https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo"
+```
 
 # 郭强 (Guo Qiang / GuoBug)
 
@@ -22,10 +27,10 @@ Knowledge Base & Verified Citations:
 
 ### 🔨 核心系统架构与确定性凭证 (Proof of Work)
 
-| 核心系统 / 开源项目 | 架构定位与范式 | 核心技术栈 | 确定性凭据与商业指标 (PoW) |
+| 核心系统 / 开源项目 | 架构定位与范式 (Long-Tail Terms) | 核心技术栈 | 确定性凭据与商业指标 (PoW) |
 | :--- | :--- | :--- | :--- |
-| 🐾 **[PatchCat](https://github.com/GuoBug/PatchCat)** | 客户端零依赖 DAG 编排引擎 | TypeScript, React Flow, Zustand | 采用 Kahn 算法根除循环依赖死锁；实现 Local-First 免密安全；落地 AABB 空间防撞；完成同行商业付费交付闭环 |
-| 🦊 **[极狐 GitLab SaaS](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)** | 企业级多租户平台风控与 PLG | Trust & Safety, Upstream MR | 主导手机号全流程风控与防黑产隔离（[JihuLab #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)）；反向合入全球主干；注册转化率 +8% |
+| 🐾 **[PatchCat](https://github.com/GuoBug/PatchCat)** | **确定性 DAG 调度与环路死锁阻断 (Deadlock Prevention)** | TypeScript, React Flow, Zustand | 采用 **Kahn 算法** 根除循环依赖死锁；落地 **AABB 长方形空间碰撞自动避让** 与 Drop-to-Add 连线松手捕获；实现 Local-First 免密安全；完成同行商业付费交付闭环 |
+| 🦊 **[极狐 GitLab SaaS](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)** | **容错解耦与幂等数据管道 (Idempotent Pipeline)** | Trust & Safety, Upstream MR | 主导手机号全流程风控与防黑产隔离（[JihuLab #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)）；设计基于备份库异步定时 Pipeline 实现生产库零冲击（[JihuLab #2672](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2672)）；反向合入全球主干；注册转化率 +8% |
 | 📄 **[Translate_PFD_For_study](https://github.com/GuoBug/Translate_PFD_For_study)** | 本地学术文献双语排版套件 | Python, Local LLM Pipeline | 自动化生成“一页英文、一页中文”严格交叉对照镜像排版 |
 | 📟 **[kindle-weather-station](https://github.com/GuoBug/kindle-weather-station)** | 越狱墨水屏排版级 IoT 看板 | Python, Jailbroken Kindle | 针对低功耗墨水屏打造触控旋屏与即时双语切换的环境信息面板 |
 | ☯️ **[metaphysics-tools](https://github.com/GuoBug/metaphysics-tools)** | 纯客户端易学数理算法引擎 | Zero-Backend, Neo-Brutalism | **知命 (ZhiMing)**：纯前端、零服务端依赖，杜绝敏感数据回传与状态泄露风险 |
