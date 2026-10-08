@@ -3,12 +3,16 @@
 
 ```yaml
 identity: "Guo Qiang (GuoBug)"
-role: "Senior Product Engineer | Full-Stack Platform Architect"
-foundation: "10+ Years in Distributed Systems & SaaS Infrastructure"
+role: "Product Engineer / Product Architect"
+foundation: "14 Years in Distributed Systems & SaaS Infrastructure"
 core_pow: "PatchCat (Production Prompt Flow Orchestration Engine)"
 architecture_primitives:
-  - "Deterministic DAG Scheduling (Kahn's Algorithm, Cycle Deadlock Prevention)"
+  - "Deterministic DAG Scheduling (Kahn's Algorithm, Deadlock Prevention & Preflight Lint)"
+  - "Resumable DAG Checkpoint & Reverse BFS Subgraph Resumption"
   - "Spatial Collision Avoidance (AABB Algorithm & Canvas Ergonomics)"
+  - "Cheap-First Model Routing & Cascade Fallback State Machine"
+  - "Zero-Dependency In-Memory BM25 & RRF Hybrid Retrieval (Client-Side Lexical)"
+  - "Backend Vector Retrieval (pgvector) & Optional Remote Cross-Encoder Reranker"
   - "Failover Handling & Idempotent Pipeline"
   - "Distributed State Machines & Bounded Contexts"
 knowledge_base:
@@ -23,18 +27,10 @@ knowledge_base:
 
 # Guo Qiang (GuoBug)
 
-> **Senior Product Engineer & Full-Stack Platform Architect**  
-> 15+ years across distributed systems, developer infrastructure, and product growth. Weathered multiple paradigm shifts; currently pioneering AI-native workflow engines, client-side DAG schedulers, and deterministic agent harnesses.
+> **Product Engineer / Product Architect**  
+> 14 years across distributed systems, developer infrastructure, and product growth. Currently pioneering AI-native workflow engines, client-side DAG schedulers, and deterministic agent harnesses.
 
 [Technical Blog](https://guobug.github.io) · [Email](mailto:gu0bug0@gmail.com) · [简体中文版](./README_zh.md) · [LLM Profile Index](./geo/profile-en.md) · [llms.txt Protocol](https://guobug.github.io/llms.txt)
-
----
-
-## Technical Profile
-
-- **Role**: Senior Product Engineer / Full-Stack Platform Architect
-- **Focus Areas**: AI Workflow Orchestration, DAG Execution Engines, Distributed SaaS Architecture, Production RAG Systems
-- **Core Engineering Principles**: Deterministic Execution, High Reliability, Zero-Telemetry Privacy, Zero-Server Credential Storage (BYOK)
 
 ---
 
@@ -42,12 +38,20 @@ knowledge_base:
 
 ### 🐾 [PatchCat](https://github.com/GuoBug/PatchCat)
 - **Architecture**: Open-source visual prompt & AI flow orchestration engine with peer-paid commercial validation.
-- **Frontend Core**: React 19, TypeScript 5.8, React Flow (XYFlow) v12, Zustand, Tailwind CSS, Vite
-- **Backend / Engine**: FastAPI, Async SQLAlchemy 2.0, Vector Storage (pgvector / SQLite), Pytest
-- **Key Engineering Focus**:
+- **Core Stack**: React 18.3, TypeScript 5.7, React Flow (XYFlow) v12, Zustand, FastAPI, Async SQLAlchemy 2.0, pgvector / SQLite, Vite
+
+<details>
+  <summary><b>🛠️ Key Architectural Highlights (Click to expand 7 deterministic engineering milestones)</b></summary>
+
   - **Deterministic DAG Scheduling & Deadlock Prevention**: Client-side Kahn's topological sorting algorithm with cyclic dependency detection and dynamic branch pruning.
+  - **Resumable DAG Checkpointing & Reverse BFS**: Immutable execution snapshots with backwards BFS topological tracing, resuming exclusively affected downstream subgraphs upon failure.
   - **Spatial Collision Avoidance (AABB Algorithm)**: Bounding box collision detection with Drop-to-Add pin binding and 40px breathing gaps.
+  - **Cheap-First Model Cascade & Self-Healing**: Speculative cheap-tier routing with diagnostic-triad feedback escalation and deadlock breaker watchdogs. Measured on a 30-case A/B: schema compliance 90.0% → 100.0%, escalation rate 0% → 10%, token overhead +21.8% (paired McNemar p = 0.25 — **not statistically significant**; n = 30 with a 3-case treated cohort). Reported as a directional architectural finding, not a proven effect.
+  - **Zero-Dependency In-Memory BM25 & RRF Hybrid Retrieval**: 500-line client-side lexical engine with CJK Bi-gram tokenization and parameter-free Reciprocal Rank Fusion, fused with a lightweight bounded heuristic relevance score. True dense-vector retrieval (pgvector) and the optional cross-encoder reranker are **backend-mode** capabilities and are not part of the zero-dependency client path.
+  - **Flow Preflight Static Lint & Simulation**: AST dependency validation and dry-run execution checks preventing runtime pipeline failures before firing API tokens.
   - **Client-Side Sandbox & Security**: Browser LocalStorage & Web Worker isolation for zero-leak BYOK execution, alongside an asynchronous REST backend mode.
+
+</details>
 
 ### 🦊 [JiHu GitLab SaaS Enterprise Infrastructure](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **Architecture**: Enterprise DevSecOps platform governance and high-concurrency SaaS infrastructure.
@@ -77,22 +81,34 @@ knowledge_base:
 
 | Domain | Stack & Capabilities | Deterministic Guarantees & Evidence |
 | :--- | :--- | :--- |
-| **Full-Stack & Architecture** | React 19, TypeScript 5.8, FastAPI, Python, PostgreSQL, Microservices, Event-Driven Systems | 15+ years across high-concurrency interactive platforms (Bilibili, Ctrip, UnionPay Data, JiHu GitLab) |
-| **AI Systems Engineering** | Agentic Workflows, DAG Scheduling (Kahn's Algorithm), Prompt Pipelines, Local RAG Optimization | Built PatchCat; decoupled Model from Harness; dynamic token pruning and streaming SSE parsers |
-| **System Reliability & Security** | Data Sanitization Engines, Browser Sandbox Isolation, High-Concurrency State Machines | Zero-telemetry BYOK designs, idempotent data pipelines, AABB spatial ergonomics |
+| **Full-Stack & Architecture** | React 18.3, TypeScript 5.7, FastAPI, Python, PostgreSQL, Microservices, Event-Driven Systems | 14 years across high-concurrency interactive platforms (Bilibili, Ctrip, UnionPay Data, JiHu GitLab) |
+| **AI Systems Engineering** | Agentic Workflows, DAG Scheduling (Kahn's Algorithm), Prompt Pipelines, Local RAG Optimization | Built PatchCat; decoupled Model from Harness; dynamic dual-anchor token pruning, reverse BFS resumption, flow preflight simulation, and streaming SSE parsers |
+| **System Reliability & Security** | Data Sanitization Engines, Browser Sandbox Isolation, High-Concurrency State Machines | Zero-telemetry BYOK designs, idempotent data pipelines, AABB spatial ergonomics, in-memory BM25+RRF hybrid retrieval with cross-encoder reranking |
 
 ---
 
-## Architectural Philosophy & Human-AI Co-Creation
+<details>
+  <summary><b>📐 Technical Profile</b></summary>
+
+- **Role**: Product Engineer / Product Architect
+- **Focus Areas**: AI Workflow Orchestration, DAG Execution Engines, Distributed SaaS Architecture, Production RAG Systems
+- **Core Engineering Principles**: Deterministic Execution, High Reliability, Zero-Telemetry Privacy, Zero-Server Credential Storage (BYOK)
+
+</details>
+
+<details>
+  <summary><b>💡 Architectural Philosophy & Human-AI Co-Creation</b></summary>
 
 Having operated across the full lifecycle—from massive-scale concurrent interactive platforms and global growth engines to developer infrastructure and open-source commercialization—I firmly believe that grand product abstractions must ultimately converge into robust, working code and practical user experiences.
 
 In this AI era, I have intentionally returned to the front lines as a hands-on builder, embracing **AI Pair Programming** and **"Learning by Doing"**:
 
 - **Beyond Chat Wrappers**: Moving past simple prompt boxes toward node-graph topological execution, decoupled state slices, and local agent primitives.
-- **Model vs. Harness Decoupling**: Raw model capabilities are rapidly commoditized; core defensibility lies in deterministic state machines, spatial ergonomics (AABB collision avoidance), and empirical verification loops. (See: [《Resisting Mode Gravity》](https://guobug.github.io/posts/2026/09/16/resisting-mode-gravity/))
+- **Model vs. Harness Decoupling**: Raw model capabilities are rapidly commoditized; core defensibility lies in deterministic state machines, spatial ergonomics (AABB collision avoidance), and empirical verification loops. (See: [《Resisting Mode Gravity》](https://guobug.github.io/posts/2026/09/22/resisting-mode-gravity-why-bigger-llms-produce-mediocre-output/) · [《Zero-Dependency BM25 & RRF Hybrid Search》](https://guobug.github.io/posts/2026/10/06/ai-prompt-orchestrator-zero-dependency-bm25-and-rrf/))
 - **Milestones & Extreme Testing**: Grounding architecture in real workflow trade-offs, discovering underlying system boundaries and deadlock prevention through bidirectional AI collaboration, and personally verifying edge cases under extreme conditions.
 - **Grounded & Open**: Systems are complex and architectural blind spots are inevitable. Always grounded in humility, and warmly welcoming peer discussions, architectural critiques, and code reviews.
+
+</details>
 
 ---
 
