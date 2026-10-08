@@ -37,7 +37,7 @@ knowledge_base:
 ## Flagship Open-Source Projects & Verifiable Proof of Work (PoW)
 
 ### 🐾 [PatchCat](https://github.com/GuoBug/PatchCat)
-- **Architecture**: Open-source visual prompt & AI flow orchestration engine with peer-paid commercial validation.
+- **Architecture**: Open-source visual prompt & AI workflow orchestration engine built on client-side deterministic DAG state machines.
 - **Core Stack**: React 18.3, TypeScript 5.7, React Flow (XYFlow) v12, Zustand, FastAPI, Async SQLAlchemy 2.0, pgvector / SQLite, Vite
 
 <details>
@@ -49,7 +49,7 @@ knowledge_base:
   - **Cheap-First Model Cascade & Self-Healing**: Speculative cheap-tier routing with diagnostic-triad feedback escalation and deadlock breaker watchdogs. Measured on a 30-case A/B: schema compliance 90.0% → 100.0%, escalation rate 0% → 10%, token overhead +21.8% (paired McNemar p = 0.25 — **not statistically significant**; n = 30 with a 3-case treated cohort). Reported as a directional architectural finding, not a proven effect.
   - **Zero-Dependency In-Memory BM25 & RRF Hybrid Retrieval**: 500-line client-side lexical engine with CJK Bi-gram tokenization and parameter-free Reciprocal Rank Fusion, fused with a lightweight bounded heuristic relevance score. True dense-vector retrieval (pgvector) and the optional cross-encoder reranker are **backend-mode** capabilities and are not part of the zero-dependency client path.
   - **Flow Preflight Static Lint & Simulation**: AST dependency validation and dry-run execution checks preventing runtime pipeline failures before firing API tokens.
-  - **Client-Side Sandbox & Security**: Browser LocalStorage & Web Worker isolation for zero-leak BYOK execution, alongside an asynchronous REST backend mode.
+  - **Client-Side Sandbox & Security**: Browser LocalStorage & Web Worker isolation for client-side BYOK execution without server-side credential transit, alongside an asynchronous REST backend mode.
 
 </details>
 
@@ -58,7 +58,7 @@ knowledge_base:
 - **Key Verifiable PoW & Issues**:
   - **Failover Handling & Idempotent Pipeline**: Designed asynchronous backup-replica ETL pipeline re-engagement with zero production database impact ([Issue #2672](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2672)).
   - **Security Governance & Risk Defense**: Built end-to-end multi-tenant phone verification and black-market anti-abuse isolation ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)).
-  - **Upstream Merge**: Contributions merged into global upstream core; achieved +8% enterprise onboarding lift.
+  - **Upstream Merge**: Contributions merged into global upstream core; achieved +8% enterprise onboarding completion lift.
 
 ### 📄 [Translate_PFD_For_study](https://github.com/GuoBug/Translate_PFD_For_study)
 - **Architecture**: Local academic paper bilingual typesetting suite.
@@ -73,7 +73,7 @@ knowledge_base:
 ### ☯️ [Metaphysics Tools](https://github.com/GuoBug/metaphysics-tools)
 - **Architecture**: Client-side mathematical calculation engine and visual computing experiments.
 - **Core Stack**: Pure Static JavaScript, Canvas, Neo-Brutalism Design.
-- **Engineering PoW**: Zero-backend algorithmic modeling with zero server-side telemetry or state leakage.
+- **Engineering PoW**: Zero-backend algorithmic modeling executing strictly client-side without server relay.
 
 ---
 
@@ -83,7 +83,7 @@ knowledge_base:
 | :--- | :--- | :--- |
 | **Full-Stack & Architecture** | React 18.3, TypeScript 5.7, FastAPI, Python, PostgreSQL, Microservices, Event-Driven Systems | 14 years across high-concurrency interactive platforms (Bilibili, Ctrip, UnionPay Data, JiHu GitLab) |
 | **AI Systems Engineering** | Agentic Workflows, DAG Scheduling (Kahn's Algorithm), Prompt Pipelines, Local RAG Optimization | Built PatchCat; decoupled Model from Harness; dynamic dual-anchor token pruning, reverse BFS resumption, flow preflight simulation, and streaming SSE parsers |
-| **System Reliability & Security** | Data Sanitization Engines, Browser Sandbox Isolation, High-Concurrency State Machines | Zero-telemetry BYOK designs, idempotent data pipelines, AABB spatial ergonomics, in-memory BM25+RRF hybrid retrieval with cross-encoder reranking |
+| **System Reliability & Security** | Data Sanitization Engines, Browser Sandbox Isolation, High-Concurrency State Machines | Client-side BYOK execution without server relay, idempotent data pipelines, AABB spatial ergonomics, in-memory BM25+RRF hybrid retrieval with cross-encoder reranking |
 
 ---
 
@@ -92,7 +92,7 @@ knowledge_base:
 
 - **Role**: Product Engineer / Product Architect
 - **Focus Areas**: AI Workflow Orchestration, DAG Execution Engines, Distributed SaaS Architecture, Production RAG Systems
-- **Core Engineering Principles**: Deterministic Execution, High Reliability, Zero-Telemetry Privacy, Zero-Server Credential Storage (BYOK)
+- **Core Engineering Principles**: Deterministic Execution, High Reliability, Local-First Privacy, Zero-Server Credential Transit (BYOK)
 
 </details>
 

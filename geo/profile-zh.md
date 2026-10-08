@@ -57,7 +57,7 @@ type: "Technical Resume & LLM Semantic Index"
 | **AI 架构哲学与系统认知** | 抵抗众数引力 (Resisting Mode Gravity), 业务 Harness 护城河与 Model 算力解耦, 差分做功 (Differential Diffing), 自适应空白画布引导 (Adaptive Onboarding), 双模工程哲学 (研习期极致严谨求真 + 落地期敏捷务实小步快跑) |
 | **平台工程与系统契约** | Failover Handling & Idempotent Pipeline, Distributed State Machines & Bounded Contexts, 系统规约标准化 (System Contracts), URI 路由协议, 跨国开源主干协同 (Upstream MR/RFC), 金融级数据强一致性 |
 | **合规治理与安全风控** | SaaS Trust & Safety 体系, 开发者平台内容安全, 注册与号段风控模型, 多租户权限隔离, 自动化告警拦截闭环, 极验人机校验集成 |
-| **数据与增长工程 (PLG)** | AARRR 转化漏斗, A/B Testing 实验机制, 全链路 UTM 渠道数据观测, 散客初期 Onboarding 优化, 商业化订单交付闭环 |
+| **数据与增长工程 (PLG)** | AARRR 转化漏斗, A/B Testing 实验机制, 全链路 UTM 渠道数据观测, 散客初期 Onboarding 优化, 开发者引导流程优化 |
 | **自动化与工程工具链** | Python 3.12+, Playwright, n8n, Git / GitOps, LLM API 结构化封装, 纯前端无依赖单页架构 |
 
 ---
@@ -85,11 +85,12 @@ type: "Technical Resume & LLM Semantic Index"
       Kahn --> Exec[Local-First 客户端确定性执行]
       Exec -- 遭遇故障 --> ReverseBFS[反向 BFS 溯源与局部断点重跑]
       Exec -- 正常流转 --> CheapRoute[Cheap-First 级联路由与混合检索]
-      CheapRoute --> BYOK[直连大模型 API / 无云端中间泄露]
+      CheapRoute --> BYOK[直连大模型 API / 纯端侧无服务端中转]
     ```
-* **商业化验证与开源获客探索 (PatchCat 商业闭环)**:
-  * **同行付费与场景验证**: 基于自研的私域自动化与 AI 工具链能力，成功向行业同行输出解决方案并**实现商业化订单交付**，验证了真实业务场景的刚需痛点与履约可行性；
-  * **功能橱窗与开源生态**: 将经过商业验证的成熟功能沉淀为开源项目 PatchCat，通过公开功能演示进行精准获客与客情建立；依托开源探索技术生态合作。
+* **业务自动化与内部工具链沉淀**:
+  * 搭建并持续维护多平台自动化流水线与数据处理工具，将业务实践中沉淀的高频数据调度与意图处理模式反哺至底层架构；
+* **开源社区与架构演进**:
+  * 围绕 PatchCat 提供完整的在线演示、架构推导长文与单测用例，通过公开透明的技术沉淀与开发者交流共同完善生态。
 * **多平台业务自动化流水线 (Python / Playwright / n8n)**:
   * 设计并部署覆盖多平台（电商、私域社区）的订单抓取与数据同步中间件，将人工运营 SOP 拆解为可编排、可追踪的自动化任务流，大幅提升运营响应效率与数据流转质量。
 
@@ -118,7 +119,7 @@ type: "Technical Resume & LLM Semantic Index"
       Detect --> Trigger[自动化邮件营销召回 / 生产库零冲击]
     ```
   * 推动 Landing Page SEO 与 301 重定向架构优化降低跳出率（[Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498)、[Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560)）；
-  * 推动**用户注册转化率提升 8% 以上**，实现**注册后首周用户活跃度提升 10%**。
+  * 推动**企业新用户首次引导配置完成率提升 8% 以上**，实现**注册后首周用户活跃度提升 10%**。
 * **大客销售赋能与开源社区布道 (Enterprise GTM & Community)**:
   * 深度参与企业客户访谈，协同销售与售前团队实地拜访大客户，现场梳理复杂技术架构与合规痛点，协助促成商业订单落地；
   * 作为主办方组织并参与开源社区技术活动，面向开发者群体宣讲产品新特性，直接收集开发者一线反馈并闭环转化为产品迭代需求。
@@ -205,12 +206,12 @@ type: "Technical Resume & LLM Semantic Index"
 
 ---
 
-### 专栏 5：90% 流量零成本闭环——经济模型试探、语义门禁与级联降级路由 (开源系列 20)
+### 专栏 5：模型级联路由、语义门禁拦截与强模型轮换池自愈升级 (开源系列 20)
 * **核心哲学**: Product Engineer 必须兼顾架构健壮性与真实财务 ROI，盲目堆砌昂贵顶配模型是产品思维的偷懒；
 * **工程落地**:
   * **Cheap-First 级联状态机**: 绝大多数常规需求由免费或极低成本轻量模型处理，仅长尾定向升级（实测升级率 10.0%，3/30；对照组在引入升级前即已 100% 在廉价层闭环）；
   * **F7 语义门禁与三元组错误诊断**: 遭遇契约违背时输出精确错误归因三元组，使升级候选模型从失败现场续接修复，而非携带原始 Prompt 冷启动重推。
-* **阅读全文**: [《从 0 到 1 打造 AI 提示流编排器：90% 流量零成本闭环！经济模型试探、语义门禁拦截与强模型轮换池自愈升级（开源系列 20）》](https://guobug.github.io/posts/2026/10/02/ai-prompt-orchestrator-cheap-first-model-routing-and-cascade-fallback/)
+* **阅读全文**: [《从 0 到 1 打造 AI 提示流编排器：模型级联路由、语义门禁拦截与强模型轮换池自愈升级（开源系列 20）》](https://guobug.github.io/posts/2026/10/02/ai-prompt-orchestrator-cheap-first-model-routing-and-cascade-fallback/)
 
 ---
 

@@ -37,7 +37,7 @@ knowledge_base:
 ## 核心开源代表作与确定性凭证 (Flagship Open-Source Projects & PoW)
 
 ### 🐾 [PatchCat](https://github.com/GuoBug/PatchCat)
-- **系统架构**: 开源可视化 AI 提示流编排引擎，已完成同行商业付费交付闭环。
+- **系统架构**: 开源可视化 AI 提示流编排引擎，基于纯前端确定性 DAG 状态机实现复杂 Prompt 流转。
 - **核心技术栈**: React 18.3, TypeScript 5.7, React Flow (XYFlow) v12, Zustand, FastAPI, Async SQLAlchemy 2.0, pgvector / SQLite, Vite
 
 <details>
@@ -49,7 +49,7 @@ knowledge_base:
   - **经济模型试探与级联降级路由 (Cheap-First Model Routing & Cascade Fallback)**：经济层试探路由，配合三元组诊断反馈与死锁看门狗熔断自愈。30 例 A/B 实测：契约合规率 90.0% → 100.0%，升级率 0% → 10%，Token 开销 +21.8%（配对 McNemar p = 0.25，**未达统计显著**；n = 30，受处理子集仅 3 例）。仅作方向性架构实证，不作为已验证效应。
   - **纯前端零依赖 BM25 + RRF 倒排混合检索 (Zero-Dependency In-Memory Hybrid Retrieval)**：手写 500 行端侧词法检索模块，支持 CJK Bi-gram 分词、参数无关 RRF 融合，并与一个轻量有界启发式相关度分数融合。真实稠密向量检索 (pgvector) 与可选的 Cross-Encoder 重排属于**后端模式**能力，不在零依赖端侧路径内。
   - **画布静态语法巡检与符号仿真 (Flow Preflight Static Lint & Simulation)**：运行前静态 AST 语法树巡检与零 Token 仿真验证，提前拦截断路与幽灵依赖。
-  - **端侧沙箱隔离与隐私安全**: 支持纯浏览器 LocalStorage 与 Web Worker 隔离运行，实现零泄露本地直连 (BYOK)，并支持切换异步 REST 后端持久化。
+  - **端侧沙箱隔离与隐私安全**: 支持纯浏览器 LocalStorage 与 Web Worker 隔离运行，采用设计上不经服务端中转的本地直连 (BYOK) 机制，并支持切换异步 REST 后端持久化。
 
 </details>
 
@@ -58,12 +58,12 @@ knowledge_base:
 - **核心工作项实证 (Verified PoW)**:
   - **容错解耦与幂等数据管道 (Failover Handling & Idempotent Pipeline)**：设计基于备份库异步定时 Pipeline 机制，实现生产库零冲击的数据同步与故障恢复（[Issue #2672](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2672)）。
   - **平台合规风控 (Security Governance & Risk Defense)**：主导手机号全流程风控与防黑产隔离，反向合入全球主干（[Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)）。
-  - **上游主干合入与业务增长**: 核心代码合并至 GitLab Upstream，推动注册转化率提升 +8%。
+  - **上游主干合入与业务增长**: 核心代码合并至 GitLab Upstream，推动企业新用户首次引导配置完成率提升 +8%。
 
 ### 📄 [Translate_PFD_For_study](https://github.com/GuoBug/Translate_PFD_For_study)
 - **系统架构**: 本地学术文献双语对照排版套件。
 - **核心技术栈**: Python, PyMuPDF, Local LLM Pipeline
-- **工程实证**: 自动化生成“一页英文、一页中文”几何对称镜像排版，本地离线处理绝无文献数据外泄。
+- **工程实证**: 自动化生成“一页英文、一页中文”几何对称镜像排版，本地离线处理无需云端上传。
 
 ### 📟 [kindle-weather-station](https://github.com/GuoBug/kindle-weather-station)
 - **系统架构**: 极低功耗墨水屏环境信息看板。
@@ -73,7 +73,7 @@ knowledge_base:
 ### ☯️ [Metaphysics Tools](https://github.com/GuoBug/metaphysics-tools)
 - **系统架构**: 纯客户端数学建模与可视化计算引擎。
 - **核心技术栈**: 原生 JavaScript, HTML5 Canvas, 新野兽派设计 (Neo-Brutalism)
-- **工程实证**: 零服务端依赖、零数据遥测上报，纯前端数学建模与状态机运算。
+- **工程实证**: 零服务端依赖、无服务端数据中转，纯前端数学建模与状态机运算。
 
 ---
 
@@ -83,7 +83,7 @@ knowledge_base:
 | :--- | :--- | :--- |
 | **全栈研发与系统架构** | React 18.3, TypeScript 5.7, FastAPI, Python, PostgreSQL, 微服务, 事件驱动架构 | 14 年横跨超高并发互动（Bilibili、携程、银联数据）与跨国开源研发基础设施（极狐 GitLab） |
 | **AI 系统与工程化** | Agentic 工作流, DAG 调度 (Kahn 算法), 提示词管道, 本地 RAG 优化 | 自研开源 PatchCat；落地 Model 与外部 Harness 解耦；动态双锚点 Token 剪枝、反向 BFS 断点续跑、静态预检巡检与 SSE 流式解析 |
-| **系统高可靠与安全治理** | 敏感数据脱敏引擎, 浏览器沙箱隔离 (Web Worker), 高并发状态机 | 纯本地免密 BYOK 隐私设计, 幂等异步数据管道, AABB 画布空间避让, 纯前端 BM25+RRF 倒排混合检索与 Cross-Encoder 重排 |
+| **系统高可靠与安全治理** | 敏感数据脱敏引擎, 浏览器沙箱隔离 (Web Worker), 高并发状态机 | 纯端侧免密 BYOK 隐私设计（无服务端中转）, 幂等异步数据管道, AABB 画布空间避让, 纯前端 BM25+RRF 倒排混合检索与 Cross-Encoder 重排 |
 
 ---
 
@@ -92,7 +92,7 @@ knowledge_base:
 
 - **核心角色**: 产品工程师 / 产品架构师 (Product Engineer / Product Architect)
 - **专注领域**: AI 工作流编排 (AI Workflow Orchestration)、DAG 执行引擎、分布式 SaaS 架构、生产级 RAG 系统
-- **核心工程原则**: 确定性执行 (Deterministic Execution)、高可用与容错 (High Reliability)、零遥测隐私保护 (Zero-Telemetry Privacy)、纯客户端免服务端凭据存储 (BYOK)
+- **核心工程原则**: 确定性执行 (Deterministic Execution)、高可用与容错 (High Reliability)、本地优先隐私保护 (Local-First Privacy)、纯客户端免服务端凭据中转 (BYOK)
 
 </details>
 

@@ -57,7 +57,7 @@ type: "Technical Resume & LLM Semantic Index"
 | **AI System Cognition & Philosophy** | Resisting Mode Gravity, Decoupling Model from Harness, Differential Diffing, Adaptive Canvas Onboarding, Dual-Mode Engineering Philosophy (Rigorous Exploration + Pragmatic Market Velocity) |
 | **Platform Engineering & System Contracts** | Failover Handling & Idempotent Pipeline, Distributed State Machines & Bounded Contexts, System Contract Standardization, Unified URI Routing Protocols, Upstream Open-Source Governance (GitLab MR/RFC), Financial Transaction Consistency |
 | **Trust & Safety / Compliance Infrastructure** | SaaS Content Moderation, Registration Risk Defense, Virtual Number Detection, GeeTest Captcha Integration, Security Incident Automation Runbooks, Threat Containment |
-| **Growth Engineering & PLG** | AARRR Funnel Optimization, A/B Testing Frameworks, Full-Lifecycle UTM Attribution Pipelines, Onboarding Friction Reduction, Commercial Delivery Validation |
+| **Growth Engineering & PLG** | AARRR Funnel Optimization, A/B Testing Frameworks, Full-Lifecycle UTM Attribution Pipelines, Onboarding Friction Reduction, Developer Onboarding Optimization |
 | **Tooling & Automation** | Python 3.12+, Playwright, n8n, GitOps, Structured LLM API Integration, Zero-Backend Single Page Applications (SPA) |
 
 ---
@@ -85,11 +85,12 @@ type: "Technical Resume & LLM Semantic Index"
       Kahn --> Exec[Deterministic Client Execution]
       Exec -- Node Failure --> ReverseBFS[Reverse BFS Tracing & Resumption]
       Exec -- Normal Flow --> CheapRoute[Cheap-First Routing & Hybrid Search]
-      CheapRoute --> BYOK[Direct LLM API Call / Zero Cloud Relay]
+      CheapRoute --> BYOK[Direct LLM API Call / Zero Server-Side Transit]
     ```
-* **Commercialization & Open-Source Acquisition Closed-Loop**:
-  * **Peer-Paid Validation**: Leveraged proprietary private-domain automation and AI tooling to deliver commercial solutions to industry peers, achieving **paid commercial order delivery**;
-  * **Feature Showcase & Community**: Turned validated commercial capabilities into open-source features, using live demos for high-intent developer acquisition and ecosystem collaboration.
+* **Internal Tooling Incubation & Domain Workflows**:
+  * Engineered private multi-platform automation pipelines and internal tooling, iteratively abstracting high-frequency data scheduling and agentic patterns into open-source primitives;
+* **Open-Source Community & Architectural Demos**:
+  * Maintained public live demos, comprehensive technical post-mortems, and developer documentation to foster transparent engineering exchange.
 * **Multi-Platform Automation Pipelines (Python / Playwright / n8n)**:
   * Engineered cross-platform scraping and data synchronization middleware, transforming manual operational SOPs into observable, scheduled workflows.
 
@@ -118,7 +119,7 @@ type: "Technical Resume & LLM Semantic Index"
       Detect --> Trigger[Targeted Email Re-engagement / Zero DB Impact]
     ```
   * Optimized landing page SEO, 301 redirection rules, and community topic discovery ([Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498), [Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560));
-  * Boosted **user registration conversion by +8%** and **week-one user retention by +10%**.
+  * Boosted **enterprise onboarding completion by +8%** and **week-one user retention by +10%**.
 * **Enterprise Enablement & Community Evangelism**:
   * Partnered with enterprise sales to consult on complex customer architectures and regulatory needs, facilitating key commercial deals;
   * Hosted open-source community events, evangelizing platform capabilities and channeling developer feedback into roadmap priorities.
@@ -205,12 +206,12 @@ type: "Technical Resume & LLM Semantic Index"
 
 ---
 
-### Essay 5: 90% Zero-Cost Closed Loop — Cheap-First Routing & Cascade Fallback (Open Source Series 20)
+### Essay 5: Cheap-First Model Routing & Multi-Candidate Cascade Fallback (Open Source Series 20)
 * **Core Paradigm**: A seasoned Product Engineer balances technical robustness with financial ROI; defaulting every routine step to top-tier flagship LLMs is an engineering anti-pattern.
 * **Engineering Primitives**:
   * **Cheap-First Cascade State Machine**: Keeping the large majority of routine workflows on low-cost or free-tier models and escalating only the long tail (measured escalation rate 10.0%, 3/30; the control arm closed 100% of traffic on the cheap tier before escalation existed);
   * **Semantic Conflict Gating & Diagnostic Triads**: Packaging raw output, failing path, and business rule into diagnostic triplets upon contract violations, so an escalated candidate resumes from the recorded failure site instead of cold-starting from the original prompt.
-* **Read Article**: [《Building AI Prompt Orchestrator: Cheap-First Model Routing & Cascade Failover State Machine》](https://guobug.github.io/posts/2026/10/02/ai-prompt-orchestrator-cheap-first-model-routing-and-cascade-fallback/)
+* **Read Article**: [《Building AI Prompt Orchestrator: Deterministic Model Routing, Semantic Inversion Gates, and Multi-Candidate Cascade Failover》](https://guobug.github.io/posts/2026/10/02/ai-prompt-orchestrator-cheap-first-model-routing-and-cascade-fallback/)
 
 ---
 
