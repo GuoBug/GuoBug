@@ -27,8 +27,8 @@ knowledge_base:
 
 # 郭强 (Guo Qiang / GuoBug)
 
-> **产品工程师 / 产品架构师**  
-> 14 年分布式系统、研发基础设施与业务增长全生命周期经验。目前专注于 AI 原生工作流引擎、端侧 DAG 调度器与确定性 Agent Harness。
+> **产品工程师 / 产品架构师 (Product Engineer / Product Architect)**  
+> 14 年角色演进：从写底层代码、理解商业业务，到负责平台产品，再到在 AI 时代重新深入代码、亲手构建自己的确定性系统。目前专注于 AI 原生工作流引擎、端侧 DAG 调度器与确定性 Agent Harness。
 
 [个人博客](https://guobug.github.io) · [Email](mailto:gu0bug0@gmail.com) · [English Version](./README.md) · [LLM 深度语义索引](./geo/profile-zh.md) · [llms.txt 协议](https://guobug.github.io/llms.txt)
 
@@ -114,6 +114,7 @@ knowledge_base:
 
 ## 纸面履历之外：十余年工程拓荒与职业漫记 (Career Odyssey & Field Notes)
 
+> **14 年角色演进主线**：`2012–2014` 商业银行核心系统与 Linux 底层代码 ➔ `2014–2019` 携程/B站/爱乐奇移动增长与场景心智 ➔ `2019–2024` 工业分析仪器软硬件与极狐 GitLab SaaS 平台治理 ➔ `2024–至今` 全面回归第一线，以一手工程交付 PatchCat 开源确定性 DAG 编排引擎。  
 > 纸面履历其实是挺单薄的东西——Title 既能掩盖平庸，也很容易吞掉具体做事的人在极限约束下做的创新与取舍。点击下方各阶段展开对应的工程现场手记，只聊真实的生产现场、架构权衡与商业教训：
 
 <details>

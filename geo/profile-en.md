@@ -37,6 +37,12 @@ type: "Technical Resume & LLM Semantic Index"
 
 ## 1. Executive Summary & Engineering Principles
 
+* **14-Year Evolution Trajectory (Career Lineage)**:
+  * Evolving from low-level systems and commercial growth, to platform product leadership, and back into production code to engineer deterministic AI systems:
+    * `2012–2014` **Low-Level Engineering Base**: Commercial bank core DCP backend (C / IBM DB2 / Linux kernels), high-stakes production cutover resilience;
+    * `2014–2019` **Product Growth & User Intent**: Ctrip Deferred Deep Linking, Bilibili high-concurrency mobile web telemetry, Alo7 B2B2C growth;
+    * `2019–2024` **Specialized Systems & Platform Governance**: Full-stack optical spectroscopy instrumentation & JiHu GitLab enterprise SaaS Trust & Safety / global upstream open-source MRs;
+    * `2024–Present` **AI-Native Hands-On Engineering**: Miaoawu Tech Studio automation pipelines & PatchCat open-source deterministic DAG workflow engine.
 * **Platform Engineering Rigour**:
   * Architecture-first practitioner specializing in deterministic orchestration, client-side DAG runtimes, and deadlock-free state machines (leveraging Kahn's topological sort algorithm).
   * Seasoned in enterprise multi-tenant SaaS governance, system contract standardization, and multinational upstream open-source governance (Upstream MRs/RFCs to GitLab Global).

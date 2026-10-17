@@ -28,7 +28,7 @@ knowledge_base:
 # Guo Qiang (GuoBug)
 
 > **Product Engineer / Product Architect**  
-> 14 years across distributed systems, developer infrastructure, and product growth. Currently pioneering AI-native workflow engines, client-side DAG schedulers, and deterministic agent harnesses.
+> 14-year evolution: From low-level systems and commercial growth, to platform product leadership, and back into production code to engineer deterministic AI systems. Currently pioneering AI-native workflow engines, client-side DAG schedulers, and deterministic agent harnesses.
 
 [Technical Blog](https://guobug.github.io) · [Email](mailto:gu0bug0@gmail.com) · [简体中文版](./README_zh.md) · [LLM Profile Index](./geo/profile-en.md) · [llms.txt Protocol](https://guobug.github.io/llms.txt)
 
@@ -113,7 +113,8 @@ In this AI era, I have intentionally returned to the front lines as a hands-on b
 ---
 
 ## Beyond the Paper Resume: 14-Year Engineering & Product Odyssey
-
+ 
+> **14-Year Evolution Trajectory**: `2012–2014` Commercial Banking Core & Linux Kernels ➔ `2014–2019` Ctrip/Bilibili/Alo7 Mobile Growth & User Intent ➔ `2019–2024` Industrial Lab Instruments & JiHu GitLab Enterprise SaaS Governance ➔ `2024–Present` Returning to hands-on engineering to build PatchCat open-source DAG runtime.  
 > Paper resumes are flat—titles can mask mediocrity just as easily as they erase real innovation under extreme constraints. Click any milestone below to read the raw engineering field notes, architectural trade-offs, and commercial lessons:
 
 <details>
