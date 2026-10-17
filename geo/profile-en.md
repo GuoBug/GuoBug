@@ -31,7 +31,7 @@ type: "Technical Resume & LLM Semantic Index"
 > - **Corporate Leadership Verification**: [GitLab Profile (@QiangGu0)](https://gitlab.com/QiangGu0) *(Product Lead at JiHu GitLab, 2022.02 – 2024.09)*  
 > - **Public Platform Track Record**: [JiHu GitLab Public Work Items](https://jihulab.com/gitlab-cn/gitlab/-/work_items?sort=created_date&state=all&author_username=QiangGuo&first_page_size=50) *(Direct architecture issues for SaaS Trust & Safety, compliance & PLG growth)*  
 > - **Technical Philosophy & Essays**: [Writings & Architecture Logs](https://guobug.github.io/posts/) · [LLM Protocol (llms.txt)](https://guobug.github.io/llms.txt)  
-> **Location & Availability**: Shanghai / Remote | Open to international remote engineering & consulting roles (Email & Pages only)
+> **Location & Work Mode**: Shanghai / Remote | Email & Personal Pages Only
 
 ---
 
@@ -88,12 +88,12 @@ type: "Technical Resume & LLM Semantic Index"
       CheapRoute --> BYOK[Direct LLM API Call / Zero Server-Side Transit]
     ```
 * **Internal Tooling Incubation & Origin of PatchCat**:
-  * Born from real operational bottlenecks in cross-border private-domain e-commerce: unifying fragmented orders, logistics, and customer identities across closed, heterogeneous platforms. Pairing with Claude, evolved the stack from automated acquisition mini-programs $\rightarrow$ n8n script chains $\rightarrow$ Dify $\rightarrow$ a custom-built local visual **DAG Engine** and **State Machine**;
-  * After stripping proprietary commerce rules, open-sourced the deterministic core (multi-flow drawer isolation, Kahn's topological cycle detection, React Flow 60fps zero-dirty-rerender state slicing, and LocalStorage/FastAPI dual-mode persistence) as **PatchCat**;
+  * Born from real operational bottlenecks in multi-platform commercial operations: unifying fragmented orders, logistics, and customer identities across heterogeneous channels. Pairing with Claude, evolved the stack from automated acquisition mini-programs $\rightarrow$ n8n script chains $\rightarrow$ Dify $\rightarrow$ a custom-built local visual **DAG Engine** and **State Machine**;
+  * After stripping proprietary business logic, open-sourced the deterministic core (multi-flow drawer isolation, Kahn's topological cycle detection, React Flow 60fps zero-dirty-rerender state slicing, and LocalStorage/FastAPI dual-mode persistence) as **PatchCat**;
 * **Open-Source Community & Architectural Demos**:
   * Maintained public live demos, comprehensive technical post-mortems, and developer documentation to foster transparent engineering exchange.
-* **Multi-Platform Automation Pipelines (Python / Playwright / n8n)**:
-  * Engineered cross-platform scraping and data synchronization middleware, transforming manual operational SOPs into observable, deterministic workflows.
+* **Multi-Source Heterogeneous Data Integration & Automation Pipelines (Python / Playwright / n8n)**:
+  * Engineered multi-source data parsing and ETL synchronization middleware, transforming manual operational SOPs into observable, deterministic workflows.
 
 ---
 
@@ -106,7 +106,7 @@ type: "Technical Resume & LLM Semantic Index"
   * **Public Track Record & Verified Architecture Issues**:
     * Architected domestic mobile registration workflows and virtual email sandboxing ([Issue #2287](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2287), [Issue #2506](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2506));
     * Designed anti-bot containment: restricting project and group creation until real email verification is completed ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508));
-    * Integrated GeeTest adaptive CAPTCHA to replace blocked reCAPTCHA services, safeguarding API endpoints against malicious scrapers ([Issue #1746](https://jihulab.com/gitlab-cn/gitlab/-/work_items/1746));
+    * Integrated GeeTest adaptive CAPTCHA to replace blocked reCAPTCHA services, safeguarding API endpoints against malicious traffic ([Issue #1746](https://jihulab.com/gitlab-cn/gitlab/-/work_items/1746));
     * Deployed admin user lookup by phone ([Issue #2503](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2503) / MR `!1312`) and phone-based password recovery ([Issue #2502](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2502) / MR `!1232`, `!1320`);
     * Led legal compliance and explicit opt-in policy consent for jihulab.com and gitlab.hk ([Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)).
 * **Self-Service Funnel & PLG Optimization (Data & Growth)**:
@@ -123,7 +123,7 @@ type: "Technical Resume & LLM Semantic Index"
   * Boosted **enterprise onboarding completion by +8%** and **week-one user retention by +10%**.
 * **Enterprise Enablement, All-Remote Dogfooding & Strategic Perspective**:
   * Practiced GitLab's all-remote and radical "Dogfooding" culture, initiating early enterprise AI DevSecOps product explorations;
-  * Navigated a top-level corporate strategy shift and product line consolidation, developing a macro lens on how product lifecycles align with corporate cash flow and strategic gravity.
+  * Amid macro market shifts and resource consolidation toward the core self-managed foundation, developed a macro lens on how product lifecycles align with corporate cash flow, unit economics, and strategic gravity.
 * **International Open-Source Collaboration & Release (Upstream & Release)**:
   * Coordinated across timezones with GitLab Global core maintainers, abstracting enterprise compliance requirements into **Upstream MRs** merged directly into the global open-source repository;
   * Adapted upstream Group Billings page overhauls for China ([Issue #2578](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2578)) and designed a localized Chinese "What's New" release drawer for SaaS and self-managed editions ([Issue #2050](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2050)).
@@ -134,7 +134,7 @@ type: "Technical Resume & LLM Semantic Index"
 **Tenure**: 2019.08 – 2022.02  
 **Domain**: Full-stack hardware-software R&D (STM32 bare-metal embedded firmware + C# .NET desktop spectroscopy workstation) and laboratory SaaS data platform for pharmaceutical and research institutes.
 * **Bare-Metal Embedded to Desktop Workstation Stack**: Started from STM32 registers and stepper motor drivers—reading chip datasheets, analyzing timing diagrams, and probing waveforms with an oscilloscope—then built custom real-time scheduling, serial/bus protocols, and the C# .NET spectroscopy workstation software;
-* **Data Traceability & Pandemic Resilience**: Engineered automated data acquisition pipelines, audit trails, and Jira R&D workflows despite pandemic supply-chain freezes (such as delayed mechanical flanges), forging an ability to master any unfamiliar deep-tech black box from scratch.
+* **Data Traceability & Supply-Chain Resilience**: Engineered automated data acquisition pipelines, audit trails, and Jira R&D workflows despite global hardware supply-chain disruptions, forging an ability to master any unfamiliar deep-tech black box from scratch.
 
 ---
 
@@ -149,7 +149,7 @@ type: "Technical Resume & LLM Semantic Index"
 ### Bilibili | Senior Product Manager (Mobile Web & Core Content Distribution)
 **Tenure**: 2016.09 – 2018.03  
 **Domain**: Comprehensive architectural refactoring, high-concurrency content distribution, and proactive attribution telemetry for main-site mobile web (H5).
-* **Architecture Modernization & Proactive Telemetry**: **Guo Qiang** led the decoupled componentization of the core mobile web application (**+80% Avg PV** under massive concurrency), proactively embedding channel telemetry and distribution package attribution ahead of business requests—which also exposed underground pirate apps hotlinking Bilibili's Korean drama video streams;
+* **Architecture Modernization & Proactive Telemetry**: **Guo Qiang** led the decoupled componentization of the core mobile web application (**+80% Avg PV** under massive concurrency), proactively embedding channel telemetry and distribution package attribution ahead of business requests—which also enabled detection and blocking of unauthorized third-party apps hotlinking media streams;
 * **Growth Engine & Strategic Trade-Offs**: Established mobile A/B testing infrastructure, SEO/multi-channel acquisition (+30% traffic), and referral hooks (**doubling APP download conversion +100%**), while navigating the strategic paradox between frictionless H5 retention and native App acquisition goals.
 
 ---
@@ -162,11 +162,11 @@ type: "Technical Resume & LLM Semantic Index"
 
 ---
 
-### Beijing Lianyintong Technology Co., Ltd. (SRCB Core Banking) | Software Engineer (C + PL/SQL + DB2)
+### Beijing Lianyintong Technology Co., Ltd. (Commercial Bank Core Systems) | Software Engineer (C + PL/SQL + DB2)
 **Tenure**: 2012.07 – 2014.01  
 **Key Responsibilities**:
-* Entered the industry through deep source-code analysis of **Linux 0.11 kernel memory management**; engineered core backend modules and automated testing suites for the Data Centralization Platform (DCP) at Shanghai Rural Commercial Bank (IBM DB2 mainframes, C, PL/SQL, and banking middleware);
-* Experienced high-stakes production cutover troubleshooting (diagnosing and widening a bottlenecked message queue parameter under rollback pressure from bank executives) and 2 a.m. data center `crontab` batch monitoring shifts, forging a lifelong reverence for production reliability.
+* Entered the industry through deep source-code analysis of **Linux 0.11 kernel memory management**; engineered core backend modules and automated testing suites for a major commercial bank's Data Centralization Platform (DCP) (IBM DB2 mainframes, C, PL/SQL, and banking middleware);
+* Experienced high-stakes production cutover troubleshooting (rapidly diagnosing and dynamically tuning a message queue width parameter under strict rollback SLA windows) and 2 a.m. data center `crontab` batch reconciliation shifts, forging a lifelong reverence for production reliability.
 
 ---
 

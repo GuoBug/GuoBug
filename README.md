@@ -119,26 +119,26 @@ In this AI era, I have intentionally returned to the front lines as a hands-on b
 <details>
   <summary><b>07 / Miaoawu Tech Studio & PatchCat (2024.09 – Present): How 14 Years of Experience & AI Converged into an Open-Source DAG Engine</b></summary>
 
-After leaving JiHu GitLab, instead of immediately jumping into another corporate role, I poured over a decade of engineering, product, and growth experience into my own cross-border private-domain e-commerce business and technical studio.
+After leaving JiHu GitLab, I channeled over a decade of engineering, product, and growth experience into multi-platform commercial operations and our independent R&D studio.
 
-Initially, operations relied heavily on manual effort. As order volume and customer segments scaled, off-the-shelf platform tools hit a wall. I brought in **AI Workflow Orchestration** and AI Pair Programming: first building automated mini-programs for acquisition and community engagement, then tackling the hardest bottleneck—unifying fragmented orders, logistics, and customer identities across closed, heterogeneous platforms.
+Initially, operations relied heavily on manual effort. As order volume and customer segments scaled, off-the-shelf platform tools hit a wall. I brought in **AI Workflow Orchestration** and AI Pair Programming: first building automated mini-programs for acquisition and community engagement, then tackling the hardest bottleneck—unifying fragmented orders, logistics, and customer identities across heterogeneous channels.
 
-Years ago, cross-platform ETL and unified membership mapping would have required a dedicated R&D squad. Pairing with Claude, I evolved the stack step by step: starting with n8n script chains, migrating to Dify, and after hitting state-control limits in generic tools, architecting my own local visual orchestrator powered by a deterministic **DAG Engine** and **State Machine**.
+Years ago, cross-channel ETL and unified membership mapping would have required a dedicated R&D squad. Pairing with Claude, I evolved the stack step by step: starting with n8n script chains, migrating to Dify, and after hitting state-control limits in generic tools, architecting my own local visual orchestrator powered by a deterministic **DAG Engine** and **State Machine**.
 
-Throughout this milestone co-discovery process, I defined the product ergonomics and operational scenarios (multi-flow drawer isolation, zero-config local LocalStorage privacy execution), while AI helped surface deep algorithmic edge cases (Kahn's topological cycle detection, React Flow 60fps zero-dirty-rerender state slicing, and AABB spatial collision avoidance). After stripping and anonymizing proprietary commerce rules, I open-sourced the core engine as **[PatchCat](https://github.com/GuoBug/PatchCat)**.
+Throughout this milestone co-discovery process, I defined the product ergonomics and operational scenarios (multi-flow drawer isolation, zero-config local LocalStorage privacy execution), while AI helped surface deep algorithmic edge cases (Kahn's topological cycle detection, React Flow 60fps zero-dirty-rerender state slicing, and AABB spatial collision avoidance). After stripping and anonymizing proprietary business logic, I open-sourced the core engine as **[PatchCat](https://github.com/GuoBug/PatchCat)**.
 
-With the business pipeline now running autonomously under AI orchestration, my builder's itch to tackle new 0-to-1 challenges is back in full force.
+With the underlying automation pipelines running reliably in production, my focus remains dedicated to advancing deterministic AI workflow orchestration, client-side DAG state machines, and next-generation AI-Native product architectures.
 
 </details>
 
 <details>
-  <summary><b>06 / JiHu GitLab (2022.02 – 2024.09): All-Remote Open-Source Culture, SaaS GTM & Strategic Pivot</b></summary>
+  <summary><b>06 / JiHu GitLab (2022.02 – 2024.09): All-Remote Open-Source Culture, SaaS GTM & Strategic Focus</b></summary>
 
 JiHu GitLab was my first all-remote, international open-source company—and still one of my favorite engineering cultures. Stepping in to lead Ops product lines and China SaaS, I was immersed in GitLab's radical "Dogfooding" ethos, where distributed global teams collaborate asynchronously through transparent handbooks, Issues, and Merge Requests.
 
 To unlock China SaaS growth, I combined platform product engineering with full-funnel GTM mechanics: managing both the official marketing site and developer community, scaling organic acquisition via technical SEO, and overhauling the trial onboarding funnel. Because GitLab's architecture couldn't rely on off-the-shelf third-party trackers, I built an independent telemetry and full-funnel conversion analytics system from scratch, while initiating early enterprise AI DevSecOps explorations.
 
-Later, a top-level corporate strategy shift and executive reorganization led to the sunsetting of local self-developed product lines. Seeing healthy products and painstakingly built funnels zeroed out overnight by macro strategic pivots taught me to evaluate every product line through the lens of corporate cash flow and strategic gravity.
+Later, amid macro market shifts, the company consolidated resources toward its core self-managed foundation, strategically streamlining local exploratory lines. That experience taught me to evaluate every product line not just by local feature execution, but through the macro lens of corporate cash flow, unit economics, and strategic gravity.
 
 </details>
 
@@ -149,7 +149,7 @@ This chapter was a bold leap into deep-tech hardware: building high-precision ph
 
 In 2019—long before vibe coding—mastering the full hardware-software stack meant starting at STM32 registers and stepper motor drivers: reading datasheets, analyzing timing diagrams, and probing signal waveforms with an oscilloscope whenever a motor stalled. From the bare metal up, I worked across custom real-time scheduling, serial/bus communication protocols, and the C# .NET desktop spectroscopy workstation and lab data platform.
 
-When COVID-19 hit, hardware supply chains froze—even custom mechanical flanges were delayed for months. I took the dev boards and optical modules home to keep debugging firmware and standardizing our Jira R&D workflows. While supply-chain headwinds eventually slowed hardware scaling, that period forged an irreversible confidence: no technical black box is too intimidating to learn from scratch.
+When external supply-chain disruptions hit, custom mechanical components were delayed for months. I took the dev boards and optical modules home to keep debugging firmware and standardizing our Jira R&D workflows. While hardware supply cycles eventually slowed commercial scaling, that period forged an irreversible confidence: no technical black box is too intimidating to learn from scratch.
 
 </details>
 
@@ -169,7 +169,7 @@ As regulatory headwinds hit the education sector, the innovation line was scaled
 
 Joining Bilibili during its hyper-growth phase, I brought my mobile attribution experience from Ctrip to overhaul Bilibili's entire mobile web (H5) platform.
 
-My goal was simple: make it industry-leading. During the architectural rewrite, I proactively embedded channel telemetry and distribution package attribution ahead of business requests. When the marketing team later came asking for campaign tracking, they were stunned to find the entire attribution infrastructure already live. Having end-to-end telemetry also uncovered wild underground anomalies—including third-party pirate apps hotlinking Bilibili's Korean drama video streams to power their own businesses. Once observability is in place, nothing stays hidden.
+My goal was simple: make it industry-leading. During the architectural rewrite, I proactively embedded channel telemetry and distribution package attribution ahead of business requests. When the marketing team later came asking for campaign tracking, they were stunned to find the entire attribution infrastructure already live. Having end-to-end observability also enabled us to detect abnormal traffic patterns and block unauthorized third-party apps hotlinking media streams. Once observability is in place, nothing stays hidden.
 
 Yet that excellence created a strategic paradox: strategically, Mobile Web existed as a top-of-funnel acquisition bridge to drive native App installs. The smoother and more complete I made the H5 playback experience, the less incentive users had to download the native App.
 
@@ -180,22 +180,22 @@ It was a defining lesson in product strategy: local craftsmanship always yields 
 <details>
   <summary><b>02 / Ctrip (2014.03 – 2016.03): Pioneering Deferred Deep Linking & Cross-BU Attribution</b></summary>
 
-During a 2 a.m. night shift at the bank data center, a casual technical forum chat turned into an interview invite—which turned out to be Ctrip. I joined initially on a hybrid PHP Engineer / Marketing PM contract before transitioning full-time into product management. Having written production code myself meant engineering teams could never bluff me on API contracts or sprint estimates.
+During the post-delivery maintenance phase of the bank core project, a late-night technical forum exchange turned into an interview invite—which turned out to be Ctrip. I joined initially on a hybrid PHP Engineer / Marketing PM contract before transitioning full-time into product management. Having written production code myself meant engineering teams could never bluff me on API contracts or sprint estimates.
 
 Right as James Liang returned to lead Ctrip's mobile-first resurgence, I was handed a foundational challenge: standardizing event telemetry and order channel attribution across 4 fiercely independent Business Units (BUs). After aligning the cross-BU data foundation, I spearheaded two ahead-of-their-time growth engines: a site-wide dynamic H5 engagement system, and seamless H5-to-App invocation preserving full channel context—an early production implementation of Deferred Deep Linking that lifted order conversion across the funnel by 70%~80%.
 
-Building those 0-to-1 growth infrastructures when no industry playbook existed revealed my core DNA: I thrive on 0-to-1 architectural pioneering far more than routine maintenance.
+After taking those 0-to-1 growth infrastructures from conception to stable production, an invitation from hyper-growth Bilibili led me to my next challenge in massive-scale content distribution.
 
 </details>
 
 <details>
-  <summary><b>01 / Beijing Lianyintong Tech · SRCB (2012.07 – 2014.01): Linux 0.11 Kernel Roots & Respecting Production Cutovers</b></summary>
+  <summary><b>01 / Beijing Lianyintong Tech (2012.07 – 2014.01): Linux 0.11 Kernel Roots & Respecting Commercial Banking Production Cutovers</b></summary>
 
 My first job after graduation in Shanghai started with an unexpected interview discussion on Linux 0.11 kernel memory management—proving I actually read source code rather than memorizing textbook answers landed me an immediate offer.
 
-Working on the bank's Data Core Platform (IBM DB2 mainframes, C, PL/SQL, and banking middleware) taught me lifelong reverence for the word "Production." On cutover night, less than 10 minutes after traffic switched over, alarms lit up—over 90% of messages jammed in the queue and downstream systems timed out. With the bank's Vice President standing right behind us warning of a full rollback, we traced the bottleneck to an unadjusted queue-width parameter in the production config. Widening the queue and watching the backlog drain in real time was an unforgettable baptism by fire.
+Working on a major commercial bank's Data Centralization Platform (IBM DB2 mainframes, C, PL/SQL, and banking middleware) taught me lifelong reverence for the word "Production." During a critical cutover window, traffic switchover triggered queue congestion alerts as downstream responses neared timeout thresholds. Under strict rollback SLA pressure, our team rapidly traced the bottleneck to an unadjusted queue-width parameter in the high-concurrency config. Dynamically tuning the queue parameter and watching the backlog drain smoothly within the cutover window was an unforgettable baptism by fire.
 
-Months of 2 a.m. night shifts—waking up to monitor green-on-black terminal `crontab` batch jobs and occasionally spotting a mouse darting across the server room desk—instilled an instinct for operational reliability before I leaped into the rising mobile internet wave.
+Months of 2 a.m. data center shifts—monitoring green-on-black terminal `crontab` batch pipelines and end-of-day reconciliation jobs—instilled a permanent instinct for high availability and strict data consistency before I leaped into the rising mobile internet wave.
 
 </details>
 
