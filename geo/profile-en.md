@@ -87,12 +87,13 @@ type: "Technical Resume & LLM Semantic Index"
       Exec -- Normal Flow --> CheapRoute[Cheap-First Routing & Hybrid Search]
       CheapRoute --> BYOK[Direct LLM API Call / Zero Server-Side Transit]
     ```
-* **Internal Tooling Incubation & Domain Workflows**:
-  * Engineered private multi-platform automation pipelines and internal tooling, iteratively abstracting high-frequency data scheduling and agentic patterns into open-source primitives;
+* **Internal Tooling Incubation & Origin of PatchCat**:
+  * Born from real operational bottlenecks in cross-border private-domain e-commerce: unifying fragmented orders, logistics, and customer identities across closed, heterogeneous platforms. Pairing with Claude, evolved the stack from automated acquisition mini-programs $\rightarrow$ n8n script chains $\rightarrow$ Dify $\rightarrow$ a custom-built local visual **DAG Engine** and **State Machine**;
+  * After stripping proprietary commerce rules, open-sourced the deterministic core (multi-flow drawer isolation, Kahn's topological cycle detection, React Flow 60fps zero-dirty-rerender state slicing, and LocalStorage/FastAPI dual-mode persistence) as **PatchCat**;
 * **Open-Source Community & Architectural Demos**:
   * Maintained public live demos, comprehensive technical post-mortems, and developer documentation to foster transparent engineering exchange.
 * **Multi-Platform Automation Pipelines (Python / Playwright / n8n)**:
-  * Engineered cross-platform scraping and data synchronization middleware, transforming manual operational SOPs into observable, scheduled workflows.
+  * Engineered cross-platform scraping and data synchronization middleware, transforming manual operational SOPs into observable, deterministic workflows.
 
 ---
 
@@ -109,7 +110,7 @@ type: "Technical Resume & LLM Semantic Index"
     * Deployed admin user lookup by phone ([Issue #2503](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2503) / MR `!1312`) and phone-based password recovery ([Issue #2502](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2502) / MR `!1232`, `!1320`);
     * Led legal compliance and explicit opt-in policy consent for jihulab.com and gitlab.hk ([Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)).
 * **Self-Service Funnel & PLG Optimization (Data & Growth)**:
-  * Designed and shipped full-lifecycle UTM parameter tracking from web landing to backend database attribution ([Issue #2735](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2735));
+  * Built an independent telemetry and full-funnel UTM conversion analytics system from scratch ([Issue #2735](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2735)) where third-party trackers could not be applied, while managing both the official marketing website and developer community;
   * **High-Reliability Asynchronous Decoupled Architecture**:
     ```mermaid
     flowchart LR
@@ -120,52 +121,52 @@ type: "Technical Resume & LLM Semantic Index"
     ```
   * Optimized landing page SEO, 301 redirection rules, and community topic discovery ([Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498), [Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560));
   * Boosted **enterprise onboarding completion by +8%** and **week-one user retention by +10%**.
-* **Enterprise Enablement & Community Evangelism**:
-  * Partnered with enterprise sales to consult on complex customer architectures and regulatory needs, facilitating key commercial deals;
-  * Hosted open-source community events, evangelizing platform capabilities and channeling developer feedback into roadmap priorities.
+* **Enterprise Enablement, All-Remote Dogfooding & Strategic Perspective**:
+  * Practiced GitLab's all-remote and radical "Dogfooding" culture, initiating early enterprise AI DevSecOps product explorations;
+  * Navigated a top-level corporate strategy shift and product line consolidation, developing a macro lens on how product lifecycles align with corporate cash flow and strategic gravity.
 * **International Open-Source Collaboration & Release (Upstream & Release)**:
   * Coordinated across timezones with GitLab Global core maintainers, abstracting enterprise compliance requirements into **Upstream MRs** merged directly into the global open-source repository;
   * Adapted upstream Group Billings page overhauls for China ([Issue #2578](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2578)) and designed a localized Chinese "What's New" release drawer for SaaS and self-managed editions ([Issue #2050](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2050)).
 
 ---
 
-### Shanghai Xianze Analytical Instrument Co., Ltd. | Software Product Lead
+### Shanghai Xianze Analytical Instrument Co., Ltd. | Software & Platform Product Lead
 **Tenure**: 2019.08 – 2022.02  
-**Domain**: Product specifications and UX architecture for spectroscopic analyzer PC/embedded workstations in pharmaceutical and research laboratories.
-* **Hardware-Software Integrated Specifications**: Designed end-to-end interaction architectures spanning embedded hardware, serial/network communications, and spectroscopic analytical algorithms.
-* **Data Traceability & Audit Trails**: Engineered automated data acquisition pipelines, audit trails, and compliance logging for rigorous scientific reproducibility.
+**Domain**: Full-stack hardware-software R&D (STM32 bare-metal embedded firmware + C# .NET desktop spectroscopy workstation) and laboratory SaaS data platform for pharmaceutical and research institutes.
+* **Bare-Metal Embedded to Desktop Workstation Stack**: Started from STM32 registers and stepper motor drivers—reading chip datasheets, analyzing timing diagrams, and probing waveforms with an oscilloscope—then built custom real-time scheduling, serial/bus protocols, and the C# .NET spectroscopy workstation software;
+* **Data Traceability & Pandemic Resilience**: Engineered automated data acquisition pipelines, audit trails, and Jira R&D workflows despite pandemic supply-chain freezes (such as delayed mechanical flanges), forging an ability to master any unfamiliar deep-tech black box from scratch.
 
 ---
 
-### Shanghai Qinwen Information Technology Co., Ltd. | Senior Product Manager
+### Shanghai Qinwen Information Technology Co., Ltd. (Alo7) | Senior Product Manager
 **Tenure**: 2018.06 – 2019.05  
-**Domain**: Core modules for digital reading product "Blue Whale Reading" (marketing, user registration, online video courses).
-* **Data-Driven Growth & A/B Testing**: Designed multi-cohort A/B experiments across user journey touchpoints, driving a **+30% registration conversion lift** and **+20% DAU growth**.
-* **Cross-Functional Agile Delivery**: Coordinated engineering, editorial, and operations teams to ship core educational features on tight cycles.
+**Domain**: B2B2C commercial growth suite for educational institutions (WeChat Mini-Program viral check-ins + custom-built lightweight CRM + licensed video curriculum).
+* **B2B2C Commercialization & A/B Testing**: Built a custom lightweight CRM and user profiling engine from scratch; designed multi-cohort A/B experiments driving a **+30% registration conversion lift** and **+20% DAU growth**;
+* **Cross-Platform Channel & User Intent Insights**: Explored offline QR-terminal traffic monetization integrated with major e-commerce APIs (Alibaba/JD), gaining deep insight into the psychological mismatch between high-urgency offline micro-moments and slow-decision rebate funnels.
 
 ---
 
 ### Bilibili | Senior Product Manager (Mobile Web & Core Content Distribution)
 **Tenure**: 2016.09 – 2018.03  
-**Domain**: Comprehensive architectural refactoring and high-concurrency content distribution for main-site mobile web (H5).
-* **Architecture Modernization & Distribution Throughput**: **Guo Qiang** led the decoupled componentization of the core mobile web application, boosting rendering performance and achieving an **+80% increase in Average Page Views (Avg PV)** under massive concurrency.
-* **Growth Engine & Growth Hacking**: Established mobile A/B testing infrastructure; executed SEO and multi-channel traffic acquisition (+30% traffic); restructured referral hooks, **doubling APP download conversion (+100%)**.
+**Domain**: Comprehensive architectural refactoring, high-concurrency content distribution, and proactive attribution telemetry for main-site mobile web (H5).
+* **Architecture Modernization & Proactive Telemetry**: **Guo Qiang** led the decoupled componentization of the core mobile web application (**+80% Avg PV** under massive concurrency), proactively embedding channel telemetry and distribution package attribution ahead of business requests—which also exposed underground pirate apps hotlinking Bilibili's Korean drama video streams;
+* **Growth Engine & Strategic Trade-Offs**: Established mobile A/B testing infrastructure, SEO/multi-channel acquisition (+30% traffic), and referral hooks (**doubling APP download conversion +100%**), while navigating the strategic paradox between frictionless H5 retention and native App acquisition goals.
 
 ---
 
-### Ctrip | Product Manager (Ad Platform & Re-marketing Architecture)
+### Ctrip | Product Manager (Marketing & Technology Platform)
 **Tenure**: 2014.03 – 2016.03  
-**Domain**: Native ad networks, re-marketing platforms, and app user activation pipelines connecting backend ad servers with mobile clients.
-* **Unified URI Routing Standardization**: **Guo Qiang** spearheaded the organization-wide Unified URI Routing Specification, drastically reducing multi-business integration overhead and standardizing deep-linking handoffs.
-* **Ad Engineering & Monetization**: Built cross-platform ad serving APIs and real-time monitoring pipelines, generating a **+70% order conversion rate increase**.
+**Domain**: Joined with a hybrid PHP Engineer / Marketing PM background during Ctrip's mobile resurgence, leading cross-BU telemetry, order channel attribution, native ad platforms, and Deferred Deep Linking.
+* **Cross-BU Attribution & Deferred Deep Linking Pioneer**: **Guo Qiang** aligned 4 independent Business Units (BUs) onto a unified event telemetry and order attribution foundation; spearheaded a site-wide dynamic H5 engagement engine and seamless H5-to-App invocation preserving full channel parameters (an early production **Deferred Deep Linking** implementation), lifting order conversion by **70%~80%**;
+* **Ad Engineering & API Standardization**: Built cross-platform ad serving APIs and real-time lifecycle dashboards, leveraging hands-on coding fluency to align engineering contracts across departments.
 
 ---
 
-### Beijing UnionPay Data Technology Co., Ltd. | Software Engineer (C + PL/SQL)
+### Beijing Lianyintong Technology Co., Ltd. (SRCB Core Banking) | Software Engineer (C + PL/SQL + DB2)
 **Tenure**: 2012.07 – 2014.01  
 **Key Responsibilities**:
-* Engineered core software modules and automated testing suites for the Data Centralization Platform (DCP) at Shanghai Rural Commercial Bank;
-* Built foundational expertise in fault-tolerant banking infrastructure, strict ACID transaction consistency, and rigorous financial engineering practices.
+* Entered the industry through deep source-code analysis of **Linux 0.11 kernel memory management**; engineered core backend modules and automated testing suites for the Data Centralization Platform (DCP) at Shanghai Rural Commercial Bank (IBM DB2 mainframes, C, PL/SQL, and banking middleware);
+* Experienced high-stakes production cutover troubleshooting (diagnosing and widening a bottlenecked message queue parameter under rollback pressure from bank executives) and 2 a.m. data center `crontab` batch monitoring shifts, forging a lifelong reverence for production reliability.
 
 ---
 
