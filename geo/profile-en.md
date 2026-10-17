@@ -115,9 +115,9 @@ type: "Technical Resume & LLM Semantic Index"
     * Designed stepped anti-bot containment: restricting project and group creation until real email verification is completed ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508));
     * Integrated GeeTest adaptive CAPTCHA to replace blocked reCAPTCHA services, safeguarding API endpoints against malicious traffic ([Issue #1746](https://jihulab.com/gitlab-cn/gitlab/-/work_items/1746));
     * Deployed admin user lookup by phone ([Issue #2503](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2503) / MR `!1312`) and phone-based password recovery ([Issue #2502](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2502) / MR `!1232`, `!1320`);
-    * Led legal compliance and explicit opt-in policy consent for jihulab.com and gitlab.hk ([Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)).
+    * Led explicit terms and privacy consent compliance ([Epic #5453](https://jihulab.com/groups/gitlab-cn/-/work_items/5453) / [Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)) and authentication UX component adaptations ([Epic #5348](https://jihulab.com/groups/gitlab-cn/-/work_items/5348)).
 * **Self-Service Funnel & PLG Optimization (Data & Growth)**:
-  * Built an independent telemetry and full-funnel UTM conversion analytics system from scratch ([Issue #2735](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2735)) where third-party trackers could not be applied, while managing both the official marketing website and developer community;
+  * Led PostHog integration to architect an independent, self-hosted product analytics platform ([Epic #5319](https://jihulab.com/groups/gitlab-cn/-/work_items/5319)), building full-funnel UTM attribution telemetry from scratch ([Issue #2735](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2735)) while managing official marketing portals and developer community;
   * **High-Reliability Asynchronous Decoupled Architecture**:
     ```mermaid
     flowchart LR
@@ -126,14 +126,14 @@ type: "Technical Resume & LLM Semantic Index"
       Pipeline --> Detect[30-Day Inactive Evaluation]
       Detect --> Trigger[Targeted Email Re-engagement / Zero DB Impact]
     ```
-  * Optimized landing page SEO, 301 redirection rules, and community topic discovery ([Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498), [Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560));
-  * Boosted **enterprise onboarding completion by +8%** and **week-one user retention by +10%**.
+  * Architected official SaaS landing pages ([Epic #5404](https://jihulab.com/groups/gitlab-cn/-/work_items/5404)), dedicated SaaS portals ([Epic #5350](https://jihulab.com/groups/gitlab-cn/-/work_items/5350)), and SEO/301 redirection rules to curb bounce rates ([Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498), [Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560));
+  * Spearheaded interactive hands-on onboarding labs ([Epic #5377](https://jihulab.com/groups/gitlab-cn/-/work_items/5377)), boosting **enterprise onboarding completion by +8%** and **week-one user retention by +10%**.
 * **Enterprise Enablement, All-Remote Dogfooding & Strategic Perspective**:
   * Practiced GitLab's all-remote and radical "Dogfooding" culture, initiating early enterprise AI DevSecOps product explorations;
   * Amid macro market shifts and resource consolidation toward the core self-managed foundation, developed a macro lens on how product lifecycles align with corporate cash flow, unit economics, and strategic gravity.
 * **International Open-Source Collaboration & Release (Upstream & Release)**:
   * Coordinated across timezones with GitLab Global core maintainers, abstracting enterprise compliance requirements into **Upstream MRs** merged directly into the global open-source repository;
-  * Adapted upstream Group Billings page overhauls for China ([Issue #2578](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2578)) and designed a localized Chinese "What's New" release drawer for SaaS and self-managed editions ([Issue #2050](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2050)).
+  * Adapted upstream Group Billings page overhauls for China ([Issue #2578](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2578)), managed 16.3 Milestone quality triage and bug delivery ([Epic #5422](https://jihulab.com/groups/gitlab-cn/-/work_items/5422)), and designed localized Chinese "What's New" release drawers ([Issue #2050](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2050)).
 
 ---
 

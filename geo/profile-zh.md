@@ -115,9 +115,9 @@ type: "Technical Resume & LLM Semantic Index"
     * 设计“未完成真实邮箱验证前限制创建群组与项目”的阶梯式防黑产策略（[Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)）；
     * 集成“极验”人机验证替代海外 reCAPTCHA 服务，构建恶意流量防护底座（[Issue #1746](https://jihulab.com/gitlab-cn/gitlab/-/work_items/1746)）；
     * 落地管理后台手机号检索功能（[Issue #2503](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2503) / MR `!1312`）与手机号找回密码（[Issue #2502](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2502) / MR `!1232`, `!1320`）；
-    * 主导 jihulab.com 与 gitlab.hk 注册界面隐私合规与数据法规显式勾选改造（[Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)）。
+    * 主导用户协议显式勾选法律合规改造（[Epic #5453](https://jihulab.com/groups/gitlab-cn/-/work_items/5453) / [Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)）与身份验证组件适配（[Epic #5348](https://jihulab.com/groups/gitlab-cn/-/work_items/5348)）。
 * **散客数据体系与 PLG 转化优化 (Data & Growth)**:
-  * 因产品架构特殊无法直接套用现成第三方统计工具，从 0 到 1 自研搭建散客注册来源全链路渠道追踪与转化分析系统（UTM 参数全链路获取与数据库流转，[Issue #2735](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2735)），同时统筹管理对外官网与开发者技术社区；
+  * 主导集成 PostHog 搭建自主可控的数据分析平台（[Epic #5319](https://jihulab.com/groups/gitlab-cn/-/work_items/5319)），从 0 到 1 自研搭建全链路渠道追踪与转化系统（UTM 参数获取与流转，[Issue #2735](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2735)），同时统筹管理对外官网与技术社区；
   * **高可靠异步解耦架构**:
     ```mermaid
     flowchart LR
@@ -126,14 +126,14 @@ type: "Technical Resume & LLM Semantic Index"
       Pipeline --> Detect[30天不活跃用户判定]
       Detect --> Trigger[自动化邮件营销召回 / 生产库零冲击]
     ```
-  * 推动 Landing Page SEO 与 301 重定向架构优化降低跳出率（[Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498)、[Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560)）；
-  * 推动**企业新用户首次引导配置完成率提升 8% 以上**，实现**注册后首周用户活跃度提升 10%**。
+  * 推动 SaaS 官网落地页架构（[Epic #5404](https://jihulab.com/groups/gitlab-cn/-/work_items/5404)）、SaaS 独立专区（[Epic #5350](https://jihulab.com/groups/gitlab-cn/-/work_items/5350)）及 SEO/301 重定向降低跳出率（[Issue #2498](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2498)、[Issue #2560](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2560)）；
+  * 主持交互式动手实验新用户 Onboarding 引导流程（[Epic #5377](https://jihulab.com/groups/gitlab-cn/-/work_items/5377)），推动**企业新用户首次引导配置完成率提升 8% 以上**，实现**注册后首周用户活跃度提升 10%**。
 * **大客销售支持、开源社区与战略复盘 (Enterprise GTM & Strategic Perspective)**:
   * 深度践行 GitLab 全远程（All-Remote）与 Dogfooding（吃自己的狗粮）文化，主导早期企业级 AI 研发辅助产品调研；
   * 伴随宏观市场变化与公司资源向核心底座战略聚焦，建立起从公司现金流、商业 ROI 与战略矩阵高度审视产品生命周期的全局视角。
 * **跨国开源协同与多版本交付 (Upstream & Release)**:
   * 跨时区与 GitLab Global 核心维护团队对齐 Roadmap，将国内大型企业客户的关键合规诉求抽象并**反向合入 (Upstream MR) 全球开源主干**，避免本地代码长期分叉；
-  * 主导上游 Group Billings 计费改版在中国区的规格适配（[Issue #2578](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2578)），并设计支持区分 self-managed 与 SaaS 的中文「新增功能」推送机制（[Issue #2050](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2050)）。
+  * 主导上游 Group Billings 计费改版在中国区的规格适配（[Issue #2578](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2578)），负责 16.3 Milestone 敏捷版本缺陷分级与交付把控（[Epic #5422](https://jihulab.com/groups/gitlab-cn/-/work_items/5422)），并设计支持区分 self-managed 与 SaaS 的中文「新增功能」推送机制（[Issue #2050](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2050)）。
 
 ---
 
