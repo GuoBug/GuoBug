@@ -110,8 +110,9 @@ type: "Technical Resume & LLM Semantic Index"
   * Directed multi-tenant content safety and registration risk infrastructure in response to stringent domestic developer SaaS compliance mandates;
   * Led risk research on international and virtual telecom number blocks; authored the *Content Security Incident Management Playbook*; implemented automated screening, alerting, and rapid cross-functional containment protocols;
   * **Public Track Record & Verified Architecture Issues**:
+    * **Platform-Level Compliance & Anti-Abuse Initiative (Parent Epic)**: Architected and orchestrated [Epic #5398](https://jihulab.com/groups/gitlab-cn/-/work_items/5398) defining end-to-end multi-tenant registration risk defense and child work items;
     * Architected domestic mobile registration workflows and virtual email sandboxing ([Issue #2287](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2287), [Issue #2506](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2506));
-    * Designed anti-bot containment: restricting project and group creation until real email verification is completed ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508));
+    * Designed stepped anti-bot containment: restricting project and group creation until real email verification is completed ([Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508));
     * Integrated GeeTest adaptive CAPTCHA to replace blocked reCAPTCHA services, safeguarding API endpoints against malicious traffic ([Issue #1746](https://jihulab.com/gitlab-cn/gitlab/-/work_items/1746));
     * Deployed admin user lookup by phone ([Issue #2503](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2503) / MR `!1312`) and phone-based password recovery ([Issue #2502](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2502) / MR `!1232`, `!1320`);
     * Led legal compliance and explicit opt-in policy consent for jihulab.com and gitlab.hk ([Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)).

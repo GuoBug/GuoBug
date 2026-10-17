@@ -110,8 +110,9 @@ type: "Technical Resume & LLM Semantic Index"
   * 针对中国区开发者 SaaS 监管与合规要求，**郭强**联动法务、研发、战略运维与市场团队，主导多租户环境下的内容安全与注册风控机制建设；
   * 推进海外与虚拟号段风险调研及准入控制策略，主笔制定《内容安全事件管理指南》，落地自动化筛查、告警拦截与跨部门应急响应处置链路，有力保障平台合规运营；
   * **公开工作项与工程实证**:
+    * **平台级合规风控母节点**：主导主持 [Epic #5398](https://jihulab.com/groups/gitlab-cn/-/work_items/5398)（多租户风控与注册合规体系战役），自顶向下统筹规划下辖核心子需求；
     * 主导设计国内开发者手机号注册全流程与虚拟邮箱防御（[Issue #2287](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2287)、[Issue #2506](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2506)）；
-    * 设计“未完成真实邮箱验证前限制创建群组与项目”的防黑产策略（[Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)）；
+    * 设计“未完成真实邮箱验证前限制创建群组与项目”的阶梯式防黑产策略（[Issue #2508](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2508)）；
     * 集成“极验”人机验证替代海外 reCAPTCHA 服务，构建恶意流量防护底座（[Issue #1746](https://jihulab.com/gitlab-cn/gitlab/-/work_items/1746)）；
     * 落地管理后台手机号检索功能（[Issue #2503](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2503) / MR `!1312`）与手机号找回密码（[Issue #2502](https://jihulab.com/gitlab-cn/gitlab/-/work_items/2502) / MR `!1232`, `!1320`）；
     * 主导 jihulab.com 与 gitlab.hk 注册界面隐私合规与数据法规显式勾选改造（[Issue #3270](https://jihulab.com/gitlab-cn/gitlab/-/work_items/3270)）。
