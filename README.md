@@ -53,6 +53,12 @@ knowledge_base:
 
 </details>
 
+### 🛡️ [EdgeCat](https://github.com/GuoBug/EdgeCat) *(In Incubation)*
+- **Architecture**: Ultra-lightweight, local-first AI inference governance gateway designed to bridge local edge engines with cloud fallback tiers, real-time PII masking, and output contract enforcement. *(Project currently in incubation)*
+
+### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat) *(In Incubation)*
+- **Architecture**: Contract-driven cross-host AI agent handoff and code review bus built on Model Context Protocol (MCP) and SQLite WAL to relay tasks across desktop IDE agents without context drift. *(Project currently in incubation)*
+
 ### 🦊 [JiHu GitLab SaaS Enterprise Infrastructure](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **Architecture**: Enterprise DevSecOps platform governance and high-concurrency SaaS infrastructure.
 - **Key Verifiable PoW & Issues**:

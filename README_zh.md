@@ -53,6 +53,12 @@ knowledge_base:
 
 </details>
 
+### 🛡️ [EdgeCat](https://github.com/GuoBug/EdgeCat) *(正在酝酿)*
+- **系统架构**: 本地优先（Local-First）轻量级 AI 推理治理网关，打通端侧本地模型与云端兜底模型调度、流式 PII 脱敏及输出契约治理。（项目尚在酝酿与早期构建中）
+
+### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat) *(正在酝酿)*
+- **系统架构**: 基于 MCP 协议与轻量级 SQLite 的契约驱动跨 Host AI 智能体协作与代码审查总线，实现不同桌面 IDE Agent 间的确定性任务接力。（项目尚在酝酿与早期构建中）
+
 ### 🦊 [极狐 GitLab SaaS 企业级研发基建](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **系统架构**: 企业级 DevSecOps 平台治理与高并发 SaaS 基础设施。
 - **核心工作项实证 (Verified PoW)**:
