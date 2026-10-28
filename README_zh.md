@@ -62,11 +62,9 @@ knowledge_base:
 - **系统架构**: 基于 Model Context Protocol (MCP) 与 Node.js 原生 `node:sqlite`（WAL 并发模式）构建的轻量级、确定性跨宿主 AI Agent 工单交接、代码审查与评测验证底座（Verification Harness）。
 - **核心技术栈**: Node.js 22.5+ (`node:sqlite`), TypeScript 5.8, Model Context Protocol SDK, Ajv JSON Schema, Zod
 - **确定性工程亮点**:
-  - **7 态确定性状态机 (Deterministic 7-State Machine)**：状态流转严格绑定独立 SQL 事务与乐观锁（`changes === 1`），杜绝悬空状态与并发抢单冲突。
-  - **全文件 SHA-256 指纹与 TOCTOU 软失败缓冲 (ADR-0004)**：彻底解决桌面不同 IDE Agent（Antigravity、WorkBuddy、Claude Code、Cursor）物理隔离导致的陈旧代码静默盲审难题。
-  - **微秒级 CAS 租约受控守护进程 (ADR-0005)**：无写锁探测、短事务 CAS 租约防死锁、子进程树安全回收与声明式白名单脚本调度。
-  - **内置静态分析守卫与评测底座**：原生 AST 规则拦截、工作区路径防逃逸与密钥安全检测，支持 SWE-bench 风格的补丁自动化验证。
-  - **零配置一键沙箱演练**：单条命令 `npx ferrycat demo` 在 2 秒内完成全流程沙箱闭环自测。
+  - **7 态确定性状态机与 TOCTOU 防盲审**：状态跃迁严格绑定独立 SQL 事务与乐观锁（`changes === 1`），结合两阶段全文件 SHA-256 指纹与软失败缓冲（ADR-0004），彻底杜绝跨桌面 IDE Agent（Antigravity、WorkBuddy、Claude Code、Cursor）在陈旧代码上静默盲审。
+  - **微秒级 CAS 租约守护与受控隔离**：基于 SQLite WAL 短事务原子 CAS 租约防死锁（ADR-0005），结合进程树安全回收与声明式白名单 Handler 收敛任意命令注入风险。
+  - **原生评测验证守卫与零配置沙箱**：内置 AST 规则、工作区防逃逸与密钥扫描守卫（支持 SWE-bench 风格补丁确定性自动化验证），单条命令 `npx ferrycat demo` 在 2 秒内完成全流程沙箱闭环自测。
 
 ### 🦊 [极狐 GitLab SaaS 企业级研发基建](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **系统架构**: 企业级 DevSecOps 平台治理与高并发 SaaS 基础设施。

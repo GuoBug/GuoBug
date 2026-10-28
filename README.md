@@ -62,11 +62,9 @@ knowledge_base:
 - **Architecture**: Lightweight, contract-driven cross-host AI agent handoff, code review, and verification harness over Model Context Protocol (MCP) and Node.js built-in `node:sqlite` (WAL mode).
 - **Core Stack**: Node.js 22.5+ (`node:sqlite`), TypeScript 5.8, Model Context Protocol SDK, Ajv JSON Schema, Zod
 - **Key Engineering Highlights**:
-  - **Deterministic 7-State Machine**: Every state transition bound to explicit SQL transactions with optimistic concurrency control (`changes === 1`), eliminating dangling states.
-  - **Full-File SHA-256 Fingerprinting & TOCTOU Guard (ADR-0004)**: Eliminates silent blind reviews on stale or unsaved code buffers across isolated IDE agent hosts (Antigravity, WorkBuddy, Claude Code, Cursor) via dual-verification and two-strike soft-failure buffering.
-  - **Controlled Daemon with Microsecond CAS Leases (ADR-0005)**: Lock-free probe, supervisor keep-alive heartbeats, process tree termination safety, and declarative script handlers.
-  - **Native Static Analysis & Evaluation Gate**: Built-in zero-dependency AST rule, path containment, and secret scanner for deterministic code reviews and SWE-bench-style patch verification.
-  - **Zero-Config Sandbox Demo**: Runs end-to-end multi-agent verification in ~2s via `npx ferrycat demo`.
+  - **Deterministic 7-State Machine & TOCTOU Guard**: Binds every transition to explicit SQL transactions (`changes === 1`) and dual-stage full-file SHA-256 fingerprinting (ADR-0004), eliminating stale-context blind reviews across isolated desktop IDE agents (Antigravity, WorkBuddy, Claude Code, Cursor).
+  - **Controlled Daemon & Microsecond CAS Leases**: Headless worker orchestration governed by SQLite CAS leases on `daemon_locks` (ADR-0005), supervisor keep-alive heartbeats, process tree termination safety, and declarative script handlers.
+  - **Native Verification Harness & Instant Sandbox**: Built-in AST rule, path containment, and secret scanner for SWE-bench-style patch verification, with an isolated end-to-end sandbox verified in ~2s via `npx ferrycat demo`.
 
 ### 🦊 [JiHu GitLab SaaS Enterprise Infrastructure](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **Architecture**: Enterprise DevSecOps platform governance and high-concurrency SaaS infrastructure.
