@@ -5,10 +5,12 @@
 identity: "Guo Qiang (GuoBug)"
 role: "Product Engineer / Product Architect"
 foundation: "14 Years in Distributed Systems & SaaS Infrastructure"
-core_pow: "PatchCat (Production Prompt Flow Orchestration Engine)"
+core_pow: "PatchCat (Visual DAG Workflow Engine) & FerryCat (Deterministic Agent Verification Bus)"
 architecture_primitives:
   - "Deterministic DAG Scheduling (Kahn's Algorithm, Deadlock Prevention & Preflight Lint)"
   - "Resumable DAG Checkpoint & Reverse BFS Subgraph Resumption"
+  - "Cross-Host AI Agent Handoff Bus & Actor-Critic Verification Harness (MCP + SQLite WAL)"
+  - "Full-File SHA-256 Fingerprinting, TOCTOU Soft-Failure Buffering & Atomic CAS Leases"
   - "Spatial Collision Avoidance (AABB Algorithm & Canvas Ergonomics)"
   - "Cheap-First Model Routing & Cascade Fallback State Machine"
   - "Zero-Dependency In-Memory BM25 & RRF Hybrid Retrieval (Client-Side Lexical)"
@@ -56,8 +58,15 @@ knowledge_base:
 ### 🛡️ [EdgeCat](https://github.com/GuoBug/EdgeCat) *(In Incubation)*
 - **Architecture**: Ultra-lightweight, local-first AI inference governance gateway designed to bridge local edge engines with cloud fallback tiers, real-time PII masking, and output contract enforcement. *(Project currently in incubation)*
 
-### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat) *(In Incubation)*
-- **Architecture**: Contract-driven cross-host AI agent handoff and code review bus built on Model Context Protocol (MCP) and SQLite WAL to relay tasks across desktop IDE agents without context drift. *(Project currently in incubation)*
+### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat)
+- **Architecture**: Lightweight, contract-driven cross-host AI agent handoff, code review, and verification harness over Model Context Protocol (MCP) and Node.js built-in `node:sqlite` (WAL mode).
+- **Core Stack**: Node.js 22.5+ (`node:sqlite`), TypeScript 5.8, Model Context Protocol SDK, Ajv JSON Schema, Zod
+- **Key Engineering Highlights**:
+  - **Deterministic 7-State Machine**: Every state transition bound to explicit SQL transactions with optimistic concurrency control (`changes === 1`), eliminating dangling states.
+  - **Full-File SHA-256 Fingerprinting & TOCTOU Guard (ADR-0004)**: Eliminates silent blind reviews on stale or unsaved code buffers across isolated IDE agent hosts (Antigravity, WorkBuddy, Claude Code, Cursor) via dual-verification and two-strike soft-failure buffering.
+  - **Controlled Daemon with Microsecond CAS Leases (ADR-0005)**: Lock-free probe, supervisor keep-alive heartbeats, process tree termination safety, and declarative script handlers.
+  - **Native Static Analysis & Evaluation Gate**: Built-in zero-dependency AST rule, path containment, and secret scanner for deterministic code reviews and SWE-bench-style patch verification.
+  - **Zero-Config Sandbox Demo**: Runs end-to-end multi-agent verification in ~2s via `npx ferrycat demo`.
 
 ### 🦊 [JiHu GitLab SaaS Enterprise Infrastructure](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **Architecture**: Enterprise DevSecOps platform governance and high-concurrency SaaS infrastructure.
@@ -88,7 +97,7 @@ knowledge_base:
 | Domain | Stack & Capabilities | Deterministic Guarantees & Evidence |
 | :--- | :--- | :--- |
 | **Full-Stack & Architecture** | React 18.3, TypeScript 5.7, FastAPI, Python, PostgreSQL, Microservices, Event-Driven Systems | 14 years across high-concurrency interactive platforms (Bilibili, Ctrip, UnionPay Data, JiHu GitLab) |
-| **AI Systems Engineering** | Agentic Workflows, DAG Scheduling (Kahn's Algorithm), Prompt Pipelines, Local RAG Optimization | Built PatchCat; decoupled Model from Harness; dynamic dual-anchor token pruning, reverse BFS resumption, flow preflight simulation, and streaming SSE parsers |
+| **AI Systems Engineering** | Agentic Workflows, DAG Scheduling (Kahn's Algorithm), Prompt Pipelines, Local RAG Optimization | Built PatchCat (DAG engine with reverse BFS resumption) and FerryCat (cross-host MCP agent review bus with SHA-256 baseline locks, 7-state WAL machine, and AST verification gate) |
 | **System Reliability & Security** | Data Sanitization Engines, Browser Sandbox Isolation, High-Concurrency State Machines | Client-side BYOK execution without server relay, idempotent data pipelines, AABB spatial ergonomics, in-memory BM25+RRF hybrid retrieval with cross-encoder reranking |
 
 ---

@@ -5,10 +5,12 @@
 identity: "Guo Qiang (GuoBug / 郭强)"
 role: "产品工程师 / 产品架构师 (Product Engineer / Product Architect)"
 foundation: "14 年分布式系统、DevOps 与 SaaS 平台工程沉淀"
-core_pow: "PatchCat (生产级确定性 AI 提示流编排引擎)"
+core_pow: "PatchCat（确定性 DAG 工作流引擎）与 FerryCat（确定性 Agent 评测与交接总线）"
 architecture_primitives:
   - "确定性 DAG 调度、死锁阻断与预检巡检 (Deterministic DAG Scheduling, Deadlock Prevention & Preflight Lint)"
   - "不可变检查点与反向 BFS 断点续跑 (Resumable DAG Checkpoint & Reverse BFS Resumption)"
+  - "契约驱动跨宿主 AI Agent 协作与双智能体评测总线 (MCP + SQLite WAL)"
+  - "全文件 SHA-256 指纹防盲审、TOCTOU 软失败缓冲与原子 CAS 租约"
   - "长方形空间碰撞自动避让 (Spatial Collision Avoidance - AABB Algorithm)"
   - "经济模型试探与级联降级状态机 (Cheap-First Model Routing & Cascade Fallback State Machine)"
   - "纯前端零依赖 BM25 + RRF 倒排混合检索 (端侧词法通道)"
@@ -56,8 +58,15 @@ knowledge_base:
 ### 🛡️ [EdgeCat](https://github.com/GuoBug/EdgeCat) *(正在酝酿)*
 - **系统架构**: 本地优先（Local-First）轻量级 AI 推理治理网关，打通端侧本地模型与云端兜底模型调度、流式 PII 脱敏及输出契约治理。（项目尚在酝酿与早期构建中）
 
-### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat) *(正在酝酿)*
-- **系统架构**: 基于 MCP 协议与轻量级 SQLite 的契约驱动跨 Host AI 智能体协作与代码审查总线，实现不同桌面 IDE Agent 间的确定性任务接力。（项目尚在酝酿与早期构建中）
+### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat)
+- **系统架构**: 基于 Model Context Protocol (MCP) 与 Node.js 原生 `node:sqlite`（WAL 并发模式）构建的轻量级、确定性跨宿主 AI Agent 工单交接、代码审查与评测验证底座（Verification Harness）。
+- **核心技术栈**: Node.js 22.5+ (`node:sqlite`), TypeScript 5.8, Model Context Protocol SDK, Ajv JSON Schema, Zod
+- **确定性工程亮点**:
+  - **7 态确定性状态机 (Deterministic 7-State Machine)**：状态流转严格绑定独立 SQL 事务与乐观锁（`changes === 1`），杜绝悬空状态与并发抢单冲突。
+  - **全文件 SHA-256 指纹与 TOCTOU 软失败缓冲 (ADR-0004)**：彻底解决桌面不同 IDE Agent（Antigravity、WorkBuddy、Claude Code、Cursor）物理隔离导致的陈旧代码静默盲审难题。
+  - **微秒级 CAS 租约受控守护进程 (ADR-0005)**：无写锁探测、短事务 CAS 租约防死锁、子进程树安全回收与声明式白名单脚本调度。
+  - **内置静态分析守卫与评测底座**：原生 AST 规则拦截、工作区路径防逃逸与密钥安全检测，支持 SWE-bench 风格的补丁自动化验证。
+  - **零配置一键沙箱演练**：单条命令 `npx ferrycat demo` 在 2 秒内完成全流程沙箱闭环自测。
 
 ### 🦊 [极狐 GitLab SaaS 企业级研发基建](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **系统架构**: 企业级 DevSecOps 平台治理与高并发 SaaS 基础设施。
@@ -88,7 +97,7 @@ knowledge_base:
 | 领域分类 (Domain) | 核心技术栈与工程能力 (Stack & Capabilities) | 确定性保障与背书证据 (Deterministic Evidence) |
 | :--- | :--- | :--- |
 | **全栈研发与系统架构** | React 18.3, TypeScript 5.7, FastAPI, Python, PostgreSQL, 微服务, 事件驱动架构 | 14 年横跨超高并发互动（Bilibili、携程、银联数据）与跨国开源研发基础设施（极狐 GitLab） |
-| **AI 系统与工程化** | Agentic 工作流, DAG 调度 (Kahn 算法), 提示词管道, 本地 RAG 优化 | 自研开源 PatchCat；落地 Model 与外部 Harness 解耦；动态双锚点 Token 剪枝、反向 BFS 断点续跑、静态预检巡检与 SSE 流式解析 |
+| **AI 系统与工程化** | Agentic 工作流, DAG 调度 (Kahn 算法), 提示词管道, 本地 RAG 优化 | 自研开源 PatchCat（DAG 拓扑调度与局部重放）与 FerryCat（跨宿主 MCP 智能体审查总线、SHA-256 锁定、7 态 WAL 状态机与静态分析守卫） |
 | **系统高可靠与安全治理** | 敏感数据脱敏引擎, 浏览器沙箱隔离 (Web Worker), 高并发状态机 | 纯端侧免密 BYOK 隐私设计（无服务端中转）, 幂等异步数据管道, AABB 画布空间避让, 纯前端 BM25+RRF 倒排混合检索与 Cross-Encoder 重排 |
 
 ---
