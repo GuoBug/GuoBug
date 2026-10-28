@@ -61,10 +61,7 @@ knowledge_base:
 ### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat)
 - **系统架构**: 基于 Model Context Protocol (MCP) 与 Node.js 原生 `node:sqlite`（WAL 并发模式）构建的轻量级、确定性跨宿主 AI Agent 工单交接、代码审查与评测验证底座（Verification Harness）。
 - **核心技术栈**: Node.js 22.5+ (`node:sqlite`), TypeScript 5.8, Model Context Protocol SDK, Ajv JSON Schema, Zod
-- **确定性工程亮点**:
-  - **7 态确定性状态机与 TOCTOU 防盲审**：状态跃迁严格绑定独立 SQL 事务与乐观锁（`changes === 1`），结合两阶段全文件 SHA-256 指纹与软失败缓冲（ADR-0004），彻底杜绝跨桌面 IDE Agent（Antigravity、WorkBuddy、Claude Code、Cursor）在陈旧代码上静默盲审。
-  - **微秒级 CAS 租约守护与受控隔离**：基于 SQLite WAL 短事务原子 CAS 租约防死锁（ADR-0005），结合进程树安全回收与声明式白名单 Handler 收敛任意命令注入风险。
-  - **原生评测验证守卫与零配置沙箱**：内置 AST 规则、工作区防逃逸与密钥扫描守卫（支持 SWE-bench 风格补丁确定性自动化验证），单条命令 `npx ferrycat demo` 在 2 秒内完成全流程沙箱闭环自测。
+- **工程实证**: 基于 SQLite WAL 总线打通桌面多 AI 编程智能体，以全文件 SHA-256 防盲审、原子 CAS 守护租约与内置 AST 验证守卫，实现端到端确定性审查与评测。
 
 ### 🦊 [极狐 GitLab SaaS 企业级研发基建](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **系统架构**: 企业级 DevSecOps 平台治理与高并发 SaaS 基础设施。

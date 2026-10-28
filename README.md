@@ -61,10 +61,7 @@ knowledge_base:
 ### 🚢 [FerryCat](https://github.com/GuoBug/FerryCat)
 - **Architecture**: Lightweight, contract-driven cross-host AI agent handoff, code review, and verification harness over Model Context Protocol (MCP) and Node.js built-in `node:sqlite` (WAL mode).
 - **Core Stack**: Node.js 22.5+ (`node:sqlite`), TypeScript 5.8, Model Context Protocol SDK, Ajv JSON Schema, Zod
-- **Key Engineering Highlights**:
-  - **Deterministic 7-State Machine & TOCTOU Guard**: Binds every transition to explicit SQL transactions (`changes === 1`) and dual-stage full-file SHA-256 fingerprinting (ADR-0004), eliminating stale-context blind reviews across isolated desktop IDE agents (Antigravity, WorkBuddy, Claude Code, Cursor).
-  - **Controlled Daemon & Microsecond CAS Leases**: Headless worker orchestration governed by SQLite CAS leases on `daemon_locks` (ADR-0005), supervisor keep-alive heartbeats, process tree termination safety, and declarative script handlers.
-  - **Native Verification Harness & Instant Sandbox**: Built-in AST rule, path containment, and secret scanner for SWE-bench-style patch verification, with an isolated end-to-end sandbox verified in ~2s via `npx ferrycat demo`.
+- **Engineering PoW**: Bridges isolated desktop AI coding agents with a deterministic SQLite WAL bus—enforcing full-file SHA-256 TOCTOU guards, atomic CAS worker leases, and built-in AST verification to eliminate stale-context blind reviews.
 
 ### 🦊 [JiHu GitLab SaaS Enterprise Infrastructure](https://jihulab.com/gitlab-cn/gitlab/-/work_items?author_username=QiangGuo)
 - **Architecture**: Enterprise DevSecOps platform governance and high-concurrency SaaS infrastructure.
